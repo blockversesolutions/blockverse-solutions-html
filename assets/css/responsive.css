@@ -1,7 +1,15 @@
 
-@media screen and (min-width:1280px) {
+@media screen and (min-width:1480px) {
   .navbar-nav {
     gap:15px;
+  }
+  .hero-sub-card-2{
+    right: -20%;
+    bottom: 20px;
+  }
+  .hero-sub-card-3{
+    right: -20%;
+    top: 20px;
   }
 }
  
@@ -22,21 +30,37 @@
   .navbar-nav{
     margin-top: 30px;
   }
-  .footer-item {
-    padding: 65px 30px;
-    border-left: 1px solid #FFFFFF1A;
+  .subtract-text span {
+    font-size: 35px;
+    line-height: 40px;
+    padding: 14px 25px;
+    border: 6px solid #000;
   }
 }
 @media screen and (max-width: 991px) {
-  .footer{
-    flex-wrap: wrap;
+  .common-heading-section h4 {
+    font-size: 34px;
+    line-height: 35px;
   }
-  .footer-pagination{
-    width: 100%;
-  }
-  .footer-description{
+  .faq-thumbnails{
     text-align: center;
-    width: 100%;
+  }
+  .faq-thumbnails img{
+    margin: 0 auto;
+    width: 80% !important;
+  }
+  .trading-country-section{
+    overflow-x: hidden;
+  }
+  .ellipse{
+    width: 350px;
+    height: 350px;
+  }
+  .ellipse-1,.ellipse-5,.ellipse-7{
+    right:0%;
+  }
+  .ellipse-2,.ellipse-4,.ellipse-6{
+    left:0%;
   }
   .common-heading-section h2 {
     font-size: 40px;
@@ -65,9 +89,6 @@
   .header-area {
     margin-bottom:0px;
   }
-  .common-heading-section h2,.common-heading-section h3,.common-heading-section h4,.common-heading-section p{
-    text-align: center;
-  }
   .hero-section {
     padding-top:0px;
   }
@@ -89,23 +110,6 @@
   .clients-trading-table{
     margin-top: 0;
   }
-  .ico-section{
-    padding: 0;
-  }
-  .hero-child-image-1 {
-    left: -5%;
-    width: 140px;
-  }
-  .hero-child-image-2 {
-    right: -3%;
-    width: 150px;
-  }
-  .card-1 {
-    width: 200px !important;
-  }
-  .information-content{
-    margin-top: 60px;
-  }
   .mt-140{
     margin-top: 100px;
   }
@@ -114,53 +118,42 @@
   }
 }
 @media screen and (max-width:767px) {
-  .shape-5{
-    max-width: 350px;
-    width: 100%;
-    right: 0;
+  .hero-section{
+    overflow-x: hidden;
   }
-  .shape-1{
-    max-width: 350px;
-    width: 100%;
-    left: 0;
+  .copyright{
+    margin-top: 20px;
   }
-  .footer-item {
-    padding: 30px 12px;
+  .blog-content h4 {
+    font-size: 28px;
   }
-  .faq-thumbnails{
-    text-align: center;
+  .after-bar::after {
+   display: none;
   }
-  .faq-thumbnails img{
-    width: 70% !important;
+  .info-thumbnails img{
+    min-height: 350px;
+  }
+  .footer-logo{
+    margin-bottom: 40px;
+  }
+  .contact-info, .contact-form {
+    padding: 35px 12px;
+  }
+  .country-list ul li img{
+    width: 25px;
+    height: 25px;
+  }
+  .country-list ul li {
+    font-size: 15px;
+    border: 1.5px solid #DA001766;
+    padding:6px 12px;
+    backdrop-filter: blur(20px);
   }
   .slider-arrows{
     margin-top: 40px;
   }
-  .step-card-thumbnail{
-    text-align: center;
-  }
-  .step-card-thumbnail img{
-    width: 50%;
-  }
-  .step-card{
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  .coin-info-text h5, .coin-rate h5 {
-    font-size: 18px;
-    line-height: 26.4px;
-    color: #FFFFFF;
-  }
   .primary-btn, .secondary-btn {
     padding: 12px 24px;
-  }
-  .support-list {
-    width: 100%;
-  }
-  .footer {
-    gap:35px;
-    flex-wrap: wrap;
-    justify-content: center;
   }
   .btn-list ul {
     gap:10px;
@@ -176,57 +169,33 @@
   p{
     font-size: 16px;
   }
-  .center-image{
-    width: 100%;
-  }
   .secondary-btn, .tab-btn ul li {
     padding: 8px 20px;
     font-size: 16px;
     gap:8px;
   }
   .accordion-button:not(.collapsed) {
-    font-size: 18px;
+    font-size: 24px;
   }
-  .info-thumbnails img{
-    width: 100%;
+  .hero-sub-card-1 {
+    left: 0;
+    bottom: 125px;
   }
-  .data-counter-card-1{
-    left:0%;
+  .hero-sub-card h5 {
+    font-size: 20px;
+    line-height: 24px;
   }
-  .data-counter-card-2{
-    right:0%;
+  .hero-sub-card p{
+    font-size: 14px;
   }
 }
 @media screen and (max-width:580px) {
-  .partner-icon img {
-    max-width: 50px;
-  }
-  .trading-info-logo img {
-    width: 25px;
-  }
-  .hero-child-image-1{
-    left: 0;
-  }
-  .hero-child-image-2{
+  
+  .hero-sub-card {
     display: none;
   }
   body{
     overflow-x: hidden;
-  }
-  .info-list ul{
-    align-items: start !important;
-  }
-  .footer-pagination {
-    flex-wrap: wrap;
-  }
-  .footer-item{
-    width: 50%;
-  }
-  .footer-description{
-    width: 100%;
-  }
-  .ico-address p{
-    font-size: 13px;
   }
   .clients-trading-table table tr td {
     font-size: 14px;

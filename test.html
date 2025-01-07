@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Floating Tags Animation</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f0f0f0;
+      overflow: hidden;
+    }
+
+    .tag-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      max-width: 800px;
+    }
+
+    .tag {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px 20px;
+      border: 1px solid #000;
+      border-radius: 50px;
+      background: #fff;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+      cursor: pointer;
+      user-select: none;
+      position: relative;
+    }
+  </style>
+</head>
+<body>
+  <div class="tag-container">
+    <div class="tag">Italy</div>
+    <div class="tag">Canada</div>
+    <div class="tag">Netherlands</div>
+    <div class="tag">Türkiye</div>
+    <div class="tag">France</div>
+    <div class="tag">Germany</div>
+    <div class="tag">South Africa</div>
+    <div class="tag">Argentina</div>
+    <div class="tag">United Kingdom</div>
+    <div class="tag">Brazil</div>
+    <div class="tag">Spain</div>
+    <div class="tag">UAE</div>
+    <div class="tag">Singapore</div>
+    <div class="tag">Nigeria</div>
+    <div class="tag">156+ more</div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+  <script>
+    anime({
+      targets: '.tag',
+      translateX: function() {
+        return anime.random(-100, 100);
+      },
+      translateY: function() {
+        return anime.random(-50, 50);
+      },
+      rotate: function() {
+        return anime.random(-10, 10);
+      },
+      duration: 3000,
+      easing: 'easeInOutSine',
+      loop: true,
+      direction: 'alternate',
+      delay: function(el, i) {
+        return i * 100; // Stagger the animation
+      }
+    });
+  </script>
+</body>
+</html>

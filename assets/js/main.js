@@ -25,20 +25,23 @@ jQuery(document).ready(function ($) {
       centerMode: true,
       prevArrow: $('.testimonial-left'),
       nextArrow: $('.testimonial-right'),
-      // responsive: [ 
-      //   {
-      //     breakpoint:991,
-      //     settings: {
-      //       slidesToShow: 2,
-      //     },
-      //   },
-      //   {
-      //     breakpoint:580,
-      //     settings: {
-      //       slidesToShow: 1,
-      //     },
-      //   },
-      // ],
+      responsive: [ 
+        {
+          breakpoint:991,
+          settings: {
+            slidesToShow: 2,
+            centerMode: false,
+          },
+        },
+        {
+          breakpoint:580,
+          settings: {
+            slidesToShow: 1,
+            centerMode: false,
+            dots:true,
+          },
+        },
+      ],
     });
     $(document).on("click", function (event) {
       const $div = $("#outside-click");
