@@ -637,8 +637,13 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.dtr-expanded > td.dtr-control:
 	box-shadow: 0 0 0 0 transparent;
 	padding-bottom: 18px;
 }
+.accordion-item:first-of-type {
+	border-top-left-radius:15px;
+	border-top-right-radius:15px;
+}
 .accordion-item{
   border: none;
+  border-radius: 15px;
   background:transparent;
 }
 .accordion{
@@ -648,14 +653,13 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.dtr-expanded > td.dtr-control:
 .accordion::after {
 	content: "";
 	position: absolute;
-	left: -7px;
-	top: 0px;
+	left: -8px;
+	top:-8px;
 	height: 15px;
 	width: 15px;
 	background-color: #140001;
 	border: 3px solid #DA0017;
 	border-radius: 50%;
-	z-index: 9;
 }
 .collapse.show{
   position: relative;
@@ -1284,30 +1288,12 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.dtr-expanded > td.dtr-control:
 	opacity: .75;
 	color: black;
 }
-.accordion {
-  width: 100%;
-  margin: 50px auto;
+
+.scrollable-accordion {
+  max-height: 400px; /* Set a height for scrolling */
+  overflow-y: auto;  /* Enable vertical scrolling */
 }
-.accordion-header {
-	padding: 8px 30px;
-	background-color: transparent;
-	cursor: pointer;
-	font-size: 24px;
-	color: #fff;
-}
-.accordion-content {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.5s ease-in-out;
-  background-color: transparent;
-  padding: 0 15px;
-}
-.accordion-content p {
-	margin: 15px 19px;
-}
-.accordion-item:last-child {
-  border-bottom: none;
-}
-.accordion-item.active {
-  border-left: 3px solid #DA0017; /* Change the color to your preference */
+
+.accordion-item {
+  border-bottom: 1px solid #ddd; /* Optional: Style the separator */
 }
