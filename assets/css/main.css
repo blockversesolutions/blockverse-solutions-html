@@ -245,12 +245,39 @@ button:focus:not(:focus-visible) {
 		url('../images/bg/bg-1.png');
 }
 .gradient-color {
-	background: linear-gradient(90deg, #FFB0B0 0%, #9d3333 70.17%);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-	background-clip: text;
-	text-fill-color: transparent;
+  background: linear-gradient(90deg, #FFB0B0, #9d3333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  animation: gradientColorAnimation 2s ease infinite;
 }
+
+@keyframes gradientColorAnimation {
+  0% {
+      background: linear-gradient(90deg, #FFB0B0, #9d3333);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-fill-color: transparent;
+  }
+  50% {
+      background: linear-gradient(90deg, #9d3333, #FFB0B0);
+      -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+  }
+  100% {
+      background: linear-gradient(90deg, #FFB0B0, #9d3333);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-fill-color: transparent;
+  }
+}
+
+
  .icon-bar {
 	color: #fff;
 	padding:6px 10px;
@@ -602,12 +629,13 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.dtr-expanded > td.dtr-control:
   font-size: 16px;
   line-height: 24px;
 }
-.accordion-button:not(.collapsed){
-  background-color: transparent;
-  font-size: 24px;
-  font-weight: 600;
-  color:#FFFFFF;
-  box-shadow: 0 0 0 0 transparent;
+.accordion-button:not(.collapsed) {
+	background-color: transparent;
+	font-size: 30px;
+	font-weight: 600;
+	color: #FFFFFF;
+	box-shadow: 0 0 0 0 transparent;
+	padding-bottom: 18px;
 }
 .accordion-item:first-of-type {
 	border-top-left-radius:15px;
@@ -636,7 +664,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.dtr-expanded > td.dtr-control:
 .collapse.show{
   position: relative;
 }
-.collapse.show::after {
+.accordion-collapse.collapse.show::after {
 	content: "";
 	position: absolute;
 	left: -2px;
@@ -978,8 +1006,10 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.dtr-expanded > td.dtr-control:
 .support-logo{
   border-radius: 50%;
   background: linear-gradient(90deg, #FFB0B0 0%, #d82121f3 100%);
-  height: 50px;
-  width: 50px;
+  min-height: 50px;
+  min-width: 50px;
+  max-width: 50px;
+  max-height: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
