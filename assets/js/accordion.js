@@ -2,10 +2,27 @@ document.addEventListener('DOMContentLoaded', () => {
     const accordionItems = document.querySelectorAll('.accordion-item');
     let currentIndex = 0;
 
-    function scrollAccordion(event) {
-        event.preventDefault();
+    function toggleAccordion(index) {
+        // Collapse all items
+        accordionItems.forEach((item, i) => {
+            const content = item.querySelector('.accordion-content');
+            if (i === index) {
+                // Toggle the clicked item
+                item.classList.toggle('active');
+                content.style.maxHeight = item.classList.contains('active') ? content.scrollHeight + 'px' : null;
+            } else {
+                // Collapse all other items
+                item.classList.remove('active');
+                content.style.maxHeight = null;
+            }
+        });
+    }
 
-        // Collapse the current section and remove the active class
+    function scrollAccordion(event) {
+        event.preventDefault(); // Prevent default scroll behavior
+        event.stopPropagation(); // Stop event from propagating further
+
+        // Collapse the current section
         const currentItem = accordionItems[currentIndex];
         const currentContent = currentItem.querySelector('.accordion-content');
         currentContent.style.maxHeight = null;
@@ -19,18 +36,23 @@ document.addEventListener('DOMContentLoaded', () => {
         if (currentIndex < 0) currentIndex = 0;
         if (currentIndex >= accordionItems.length) currentIndex = accordionItems.length - 1;
 
-        // Expand the new section and add the active class
-        const nextItem = accordionItems[currentIndex];
-        const nextContent = nextItem.querySelector('.accordion-content');
-        nextContent.style.maxHeight = nextContent.scrollHeight + 'px';
-        nextItem.classList.add('active');
+        // Expand the new section
+        toggleAccordion(currentIndex);
     }
 
     // Initialize the first accordion item
-    accordionItems[currentIndex].classList.add('active');
-    accordionItems[currentIndex].querySelector('.accordion-content').style.maxHeight =
-        accordionItems[currentIndex].querySelector('.accordion-content').scrollHeight + 'px';
+    toggleAccordion(currentIndex);
 
     // Attach the scroll event to the accordion
-    document.querySelector('.accordion').addEventListener('wheel', scrollAccordion);
+    const accordionContainer = document.querySelector('.accordion');
+    accordionContainer.addEventListener('wheel', scrollAccordion);
+
+    // Attach click event to each accordion header
+    accordionItems.forEach((item, index) => {
+        const header = item.querySelector('.accordion-header');
+        header.addEventListener('click', () => {
+            currentIndex = index; // Update currentIndex to clicked index
+            toggleAccordion(index);
+        });
+    });
 });

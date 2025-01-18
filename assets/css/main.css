@@ -956,6 +956,12 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.dtr-expanded > td.dtr-control:
 .slick-slide.slick-current.slick-active .product-logo{
   display: none;
 }
+.slick-slide.slick-current.slick-active:hover .product-logo{
+  display: block;
+}
+.slick-slide.slick-current.slick-active:hover .product-description{
+  display: none;
+}
 .slick-slide.slick-current.slick-active .product-description{
   display: block;
 }
