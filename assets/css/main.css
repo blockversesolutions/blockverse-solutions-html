@@ -81,6 +81,8 @@ p {
 .primary-btn,.tab-btn ul li.active {
 	padding:10px 26px;
 	color:#fff;
+  position: relative;
+  z-index:1;
 	font-size: 16px;
 	font-weight: 500;
 	display: flex;
@@ -938,7 +940,6 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.dtr-expanded > td.dtr-control:
   background-color: #0B0001;
   border-radius:60px 0 0 0;
 } */
- 
 
 .product-description p{
   color: #FFFFFFCC;
@@ -1315,5 +1316,56 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.dtr-expanded > td.dtr-control:
   border-bottom: none;
 }
 .accordion-item.active {
-  border-left: 3px solid #DA0017; /* Change the color to your preference */
+  border-left: 3px solid #DA0017;
 }
+/* Start blog page css */
+.post-author a img{
+  border-radius: 50%;
+}
+.post-option a i{
+  color:#fff;
+  margin-right: 10px;
+}
+.blog-post-author a,.post-option a,.tags span{
+  font-size: 16px;
+  font-weight: 500;
+  color:#fff;
+}
+.blockquote{
+  margin-top: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left:40px;
+  border-left:4px solid #777777;
+  font-size: 18px;
+  font-style: italic;
+}
+.tags ul li a{
+  font-size: 14px;
+  padding: 4px 12px;
+  border-radius: 30px;
+  display: inline-block;
+  color:#000;
+  background-color:#ddd;
+}
+.tags ul li a:hover{
+  background: #DA0017;
+  color:#fff;
+}
+.blog-thumbnails-post img{
+  max-height: 380px;
+  object-fit: cover;
+}
+.blog-post-title{
+  padding: 10px 18px;
+  background: #dddddd12;
+  border-radius: 15px;
+}
+.rich-editor-text h4{
+  margin-bottom: 20px;
+  font-size:32px;
+  color:#fff;
+}
+ 
+ 
+/* end blog page css */

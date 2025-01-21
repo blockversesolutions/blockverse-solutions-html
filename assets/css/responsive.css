@@ -240,6 +240,12 @@
   .primary-btn img, .secondary-btn img {
     width: 16px;
   }
+  .blockquote{
+    padding-left: 20px;
+  }
+  .post-option{
+    margin-top: 10px;
+  }
 }
 
 
