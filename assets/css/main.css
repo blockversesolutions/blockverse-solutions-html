@@ -211,7 +211,7 @@ button:focus:not(:focus-visible) {
   width:18px;
 }
 .common-heading-section h2 {
-	font-size: 85px;
+	font-size:75px;
 	line-height: 80px;
 	text-transform: uppercase;
 }
@@ -232,7 +232,7 @@ button:focus:not(:focus-visible) {
   line-height:36px;
 }
 .common-heading-section p{
-  margin-top:15px;
+  margin-top:20px;
 }
 .hero-thumbnail img{
   max-width: 216px;
@@ -862,7 +862,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.dtr-expanded > td.dtr-control:
   top: 20px;
 }
 .hero-sub-card-2,.hero-sub-card-3{
-  right:0;
+  right:15px;
 }
 .hero-sub-card h5{
   color:#FFFFFF;
@@ -1196,9 +1196,9 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.dtr-expanded > td.dtr-control:
 	margin: 0 auto;
 }
 .country-list ul li img{
-  height: 40px;
+  height:35px;
   border-radius: 50%;
-  width: 40px;
+  width:35px;
   margin-right: 10px;
 }
 .rotation-45{
@@ -1228,7 +1228,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.dtr-expanded > td.dtr-control:
   font-weight: 600;
   border-radius: 40px;
   border: 1.5px solid #DA001766;
-  padding: 8px 12px;
+  padding: 6px 12px;
   backdrop-filter: blur(20px);
   background: #FFFFFF0A;
 }
