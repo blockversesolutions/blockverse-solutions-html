@@ -1,4 +1,3 @@
-
 @media screen and (min-width:1480px) {
   .navbar-nav {
     gap:15px;
@@ -12,7 +11,6 @@
     top: 20px;
   }
 }
- 
 @media screen and (max-width:1199px) {
   .common-heading-section h2 {
     font-size: 50px;
@@ -22,7 +20,6 @@
     font-size: 35px;
     line-height: 42px;
   }
-
   .header-right {
     margin-top: 40px;
     padding-bottom: 40px;
@@ -31,10 +28,14 @@
     margin-top: 30px;
   }
   .subtract-text span {
-    font-size: 35px;
+    font-size: 33px;
     line-height: 40px;
-    padding: 14px 25px;
+    padding: 10px 25px;
     border: 6px solid #000;
+    width: 85%;
+  }
+  .subtract-text {
+    text-align: center;
   }
 }
 @media screen and (max-width: 991px) {
@@ -130,10 +131,6 @@
   .after-bar::after {
    display: none;
   }
-  .info-thumbnails img{
-    min-height: 350px;
-    object-fit: cover;
-  }
   .footer-logo {
     margin-bottom: 40px;
     width: 100%;
@@ -151,9 +148,6 @@
     border: 1.5px solid #DA001766;
     padding:6px 12px;
     backdrop-filter: blur(20px);
-  }
-  .slider-arrows{
-    margin-top: 40px;
   }
   .primary-btn, .secondary-btn {
     padding: 12px 24px;
@@ -191,9 +185,6 @@
   .hero-sub-card p{
     font-size: 14px;
   }
-  .products-slider-section{
-    margin-top: 0;
-  }
   .accordion-header {
     padding: 8px 22px;
     font-size: 20px;
@@ -201,10 +192,11 @@
   .accordion-content p{
     margin: 12px 20px;
   }
- 
+  .simplebar-height{
+    height: 300px !important;
+  }
 }
 @media screen and (max-width:580px) {
-  
   .hero-sub-card {
     display: none;
   }

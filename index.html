@@ -10,6 +10,8 @@
    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css"/>
+   <!-- SimpleBar CSS -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.css" />
    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
    <link rel="stylesheet" href="assets/css/preloader.css" />
    <link rel="stylesheet" href="assets/css/main.css" />
@@ -36,7 +38,6 @@
                      <img src="assets/images/logo.png" alt="logo" />
                   </a>
                   <div class="d-flex align-items-center">
-                     
                      <button class="navbar-toggler icon" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
                         aria-expanded="false" aria-label="Toggle navigation">
                         <span class="icon-bar"><i class="fa fa-bars" aria-hidden="true"></i>
@@ -49,7 +50,7 @@
                            <a class="nav-link" data-target="home">Home</a>
                         </li>
                         <li class="nav-item">
-                           <a class="nav-link" data-target="products-section">Products</a>
+                           <a class="nav-link" data-target="service">services</a>
                         </li>
                         <li class="nav-item">
                            <a class="nav-link" data-target="why-choose">Why AlWadiya?</a>
@@ -78,7 +79,8 @@
             <div class="row gy-5 gx-5 align-items-center mt-40">
                <div class="col-lg-6">
                   <div class="common-heading-section text-center text-lg-start">
-                     <h2 class="text-white">Building Smarter Future <span class="gradient-color">Solutions</span> </h2>
+                     <h2 class="text-white">Empower Your Startup Journey with 
+                   <span class="gradient-color">Al Wadyat</span> </h2>
                      <p>Welcome to Al Wadyat, where we're passionate about empowering groundbreaking startups. Specializing in blockchain and fintech, we're not just financiers—we're partners dedicated to nurturing innovation. With Al Wadyat, you gain more than investment; you gain a network of experts and strategic support designed to guide your startup towards success. Let's shape the future together, transforming bright ideas into thriving enterprises. Join us at Al Wadyat, where your vision meets our expertise.
                      </p>
                   </div>
@@ -108,77 +110,80 @@
       </section>
       <!-- Hero End -->
       <!-- Start product slider -->
-       <section class="products-slider-section mt-100 position-relative" id="products-section">
+       <section class="service-section mt-100 position-relative" id="service">
          <div class="ellipse ellipse-1"></div>
          <div class="container">
             <div class="row align-items-center">
-               <div class="col-md-6">
-                  <div class="common-heading-section text-center text-md-start">
-                     <h3>Our <span class="gradient-color">Products</span></h3>
-                     <p>Unlock the full potential of ECM for efficient, secure, and profitable digital mining solutions in the modern era.</p>
-                  </div>
-               </div>
-               <div class="col-md-6">
-                  <div class="slider-arrows justify-content-md-end justify-content-center">
-                     <span class="testimonial-left slick-arrow"><i class="fas fa-arrow-left"></i></span>
-                     <span class="testimonial-right slick-arrow"><i class="fas fa-arrow-right"></i></span>
+               <div class="col-md-12">
+                  <div class="common-heading-section text-center">
+                     <h3>Our <span class="gradient-color">Services</span></h3>
                   </div>
                </div>
             </div>
-            <div class="row mt-40">
-               <div class="col-md-12">
-                  <div class="product-slider">
-                     <!-- items -->
-                     <div class="product-item position-relative">
-                        <div class="product-logo">
-                           <img src="assets/images/products-logo/mycoinpoll.png" alt="mycoinpoll" class="zoom-animation">
-                        </div>
-                        <div class="product-description">
-                           <img src="assets/images/products-logo/mycoinpoll-2.png" alt="img">
-                           <p>bCoinMart is a user-friendly platform that makes crypto trading simple and secure. With advanced features, it offers seamless transactions and access to a variety of digital assets. Whether you’re a beginner or experienced trader</p>
-                        </div>
-                        <div class="link">
-                           <a href="https://mycoinpoll.com/"><span class="btn-4"><i class="fa-solid fa-arrow-right-long rotate-50"></i></span></a>
-                        </div>
+            <div class="row gy-4 mt-40">
+               <div class="col-lg-4 col-md-6">
+                  <div class="service-card text-center">
+                     <div class="service-icon">
+                        <img src="assets/images/service-icon/1.png" alt="img">
                      </div>
-                     <!-- items -->
-                     <div class="product-item position-relative">
-                        <div class="product-logo">
-                           <img src="assets/images/products-logo/ecm.png" alt="mycoinpoll" class="zoom-animation">
-                        </div>
-                        <div class="product-description">
-                           <img src="assets/images/products-logo/ecm-2.png" alt="img">
-                           <p>bCoinMart is a user-friendly platform that makes crypto trading simple and secure. With advanced features, it offers seamless transactions and access to a variety of digital assets. Whether you’re a beginner or experienced trader</p>
-                        </div>
-                        <div class="link">
-                           <a href="https://bcoinmart.com/"><span class="btn-4"><i class="fa-solid fa-arrow-right-long rotate-50"></i></span></a>
-                        </div>
+                     <div class="service-content mt-30">
+                        <h4>Startup Investment Facilitation</h4>
+                        <p class="mt-20">We're passionate about discovering and nurturing the next big idea. Specializing in securing investments for groundbreaking startups, we focus on transformative sectors like blockchain and fintech.</p>
                      </div>
-                     <!-- items -->
-                     <div class="product-item position-relative">
-                        <div class="product-logo">
-                           <img src="assets/images/products-logo/markets-terminal.png" alt="mycoinpoll" class="zoom-animation">
-                        </div>
-                        <div class="product-description">
-                           <img src="assets/images/products-logo/markets-terminal-2.png" alt="img" class="w-100">
-                           <p>bCoinMart is a user-friendly platform that makes crypto trading simple and secure. With advanced features, it offers seamless transactions and access to a variety of digital assets. Whether you’re a beginner or experienced trader</p>
-                        </div>
-                        <div class="link">
-                          <a href="https://marketsterminal.com/"><span class="btn-4"><i class="fa-solid fa-arrow-right-long rotate-50"></i></span></a>
-                        </div>
+                  </div>
+               </div>
+               <div class="col-lg-4 col-md-6">
+                  <div class="service-card text-center">
+                     <div class="service-icon">
+                        <img src="assets/images/service-icon/2.png" alt="img">
                      </div>
-                     <!-- items -->
-                     <div class="product-item position-relative">
-                        <div class="product-logo">
-                           <img src="assets/images/products-logo/mycoinpoll.png" alt="mycoinpoll" class="zoom-animation">
-                        </div>
-                        <div class="product-description">
-                           <img src="assets/images/products-logo/mycoinpoll-2.png" alt="img">
-                           <p>bCoinMart is a user-friendly platform that makes crypto trading simple and secure. With advanced features, it offers seamless transactions and access to a variety of digital assets. Whether you’re a beginner or experienced trader</p>
-                        </div>
-                        <div class="link">
-                           <a href="https://mycoinpoll.com/"><span class="btn-4"><i class="fa-solid fa-arrow-right-long rotate-50"></i></span></a>
-                        </div>
+                     <div class="service-content mt-30">
+                        <h4>Strategic Partnership Development</h4>
+                        <p class="mt-20">We believe in the power of connection. Our team expertly bridges relationships between budding startups and seasoned investors, sparking collaborations that scale new technologies.</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-4 col-md-6">
+                  <div class="service-card text-center">
+                     <div class="service-icon">
+                        <img src="assets/images/service-icon/3.png" alt="img">
+                     </div>
+                     <div class="service-content mt-30">
+                        <h4>Risk Assessment for Startups</h4>
+                        <p class="mt-20">Every innovation carries risk, and our detailed analysis helps mitigate these, ensuring a smoother path to success.</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-4 col-md-6">
+                  <div class="service-card text-center">
+                     <div class="service-icon">
+                        <img src="assets/images/service-icon/4.png" alt="img">
+                     </div>
+                     <div class="service-content mt-30">
+                        <h4>Equity and Funding Solutions</h4>
+                        <p class="mt-20">Tailored funding strategies are our forte. We craft custom financial solutions that help visionary startups soar.</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-4 col-md-6">
+                  <div class="service-card text-center">
+                     <div class="service-icon">
+                        <img src="assets/images/service-icon/4.png" alt="img">
+                     </div>
+                     <div class="service-content mt-30">
+                        <h4>Regulatory Compliance Advisory</h4>
+                        <p class="mt-20">Navigating the regulatory maze can be daunting. We guide startups through these complexities, ensuring they thrive within legal boundaries.</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-4 col-md-6">
+                  <div class="service-card text-center">
+                     <div class="service-icon">
+                        <img src="assets/images/service-icon/6.png" alt="img">
+                     </div>
+                     <div class="service-content mt-30">
+                        <h4>Portfolio Management</h4>
+                        <p class="mt-20">We don't just invest; we nurture. Our portfolio management focuses on maximizing returns from high-potential projects, propelling the next generation of businesses forward.</p>
                      </div>
                   </div>
                </div>
@@ -295,12 +300,61 @@
                      <p>Providing tailored solutions and opportunities in Bangladesh, fostering innovation and empowering local industries to thrive in a global economy.</p>
                   </div>
                </div>
-               <div class="col-md-12">
-                  <div class="info-thumbnails position-relative">
-                     <img src="assets/images/bg/Subtract.png" alt="" class="w-100">
-                        <div class="subtract-text">
-                           <span>Bangladesh</span>
-                        </div>
+            </div>
+             <div class="row mt-50 gy-4">
+               <div class="col-md-8">
+                  <div class="info-thumbnails position-relative tabcontent" id="Bangladesh">
+                     <img src="assets/images/bg/bd.png" alt="" class="w-100">
+                     <div class="subtract-text">
+                        <span>Bangladesh</span>
+                     </div>
+                  </div>
+                  <div class="info-thumbnails position-relative tabcontent" id="Arab">
+                     <img src="assets/images/bg/uae.png" alt="" class="w-100">
+                     <div class="subtract-text">
+                        <span>UAE</span>
+                     </div>
+                  </div>
+                  <div class="info-thumbnails position-relative tabcontent" id="Vincent">
+                     <img src="assets/images/bg/vincent.png" alt="" class="w-100">
+                     <div class="subtract-text">
+                        <span>St. Vincent</span>
+                     </div>
+                  </div>
+                  <div class="info-thumbnails position-relative tabcontent" id="panama">
+                     <img src="assets/images/bg/panama.png" alt="" class="w-100">
+                     <div class="subtract-text">
+                        <span>Panama</span>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-4">
+                  <div class="simplebar-height" style="
+                     height:560px;" data-simplebar>
+                     <div class="scroll-content">
+                         <div class="operations-card d-flex flex-column g-10">
+                     <!-- btn -->
+                     <div class="operation-btn tablinks" onclick="operations(event, 'Bangladesh')" id="defaultOpen">
+                        <h4>Bangladesh</h4>
+                        <p>In Bangladesh, we continue to innovate and empower, helping local industries flourish as part of the global marketplace.</p>
+                     </div>
+                     <!-- btn -->
+                     <div class="operation-btn tablinks" onclick="operations(event, 'Arab')">
+                        <h4>United Arab Emirates</h4>
+                        <p>We're thrilled to deepen our presence in the UAE, broadening our services to foster local business growth in this vibrant financial hub.</p>
+                     </div>
+                     <!-- btn -->
+                     <div class="operation-btn tablinks" onclick="operations(event, 'Vincent')">
+                        <h4>St. Vincent</h4>
+                        <p>We're excited to set foot in St. Vincent, where we aim to harness local potential and drive sustainable development.</p>
+                     </div>
+                     <!-- btn -->
+                     <div class="operation-btn tablinks" onclick="operations(event, 'panama')">
+                        <h4>Panama</h4>
+                        <p>Our new operations in Panama tap into its strategic position, aiming to transform local enterprises into significant global players.</p>
+                     </div>
+                     </div>
+                     </div>
                   </div>
                </div>
             </div>
@@ -530,7 +584,10 @@
    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
    <script src="assets/js/main.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <!-- SimpleBar JS -->
+  <script src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.min.js"></script>
   <script src="assets/js/accordion.js"></script>
   <script src="assets/js/animation.js"></script>
+   
 </body>
 </html>
