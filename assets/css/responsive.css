@@ -56,6 +56,7 @@
   .ellipse{
     width: 350px;
     height: 350px;
+    z-index:-2;
   }
   .ellipse-1,.ellipse-5,.ellipse-7{
     right:0%;
