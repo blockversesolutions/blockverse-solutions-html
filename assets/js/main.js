@@ -139,7 +139,6 @@ $(window).on("load", function () {
   $("#preloader").delay(500).fadeOut("slow");
   $("body").delay(500).css({ opacity:1 });
  });
-
  var currentIndex = 0;
 var tablinks = document.getElementsByClassName("tablinks");
 var tabcontents = document.getElementsByClassName("tabcontent");

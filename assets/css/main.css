@@ -1292,7 +1292,6 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.dtr-expanded > td.dtr-control:
     transform: scale(0.5);
     transition: opacity 1s ease-in-out, transform 1s ease-in-out;
 }
-
 /* Show image smoothly when tab becomes active */
 .tabcontent.active img {
     opacity: 1;
