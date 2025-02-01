@@ -133,10 +133,12 @@ window.addEventListener('DOMContentLoaded', () => {
     });
   }
 });
-window.addEventListener('load', () => {
-  const preloader = document.getElementById('preloader');
-  preloader.classList.add('loader-hide');
-});
+// loader
+$(window).on("load", function () {
+  $("#preloader").fadeOut();
+  $("#preloader").delay(500).fadeOut("slow");
+  $("body").delay(500).css({ opacity:1 });
+ });
  
 function operations(evt, operations_country) {
   var i, tabcontent, tablinks;

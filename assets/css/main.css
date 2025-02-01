@@ -1276,6 +1276,8 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.dtr-expanded > td.dtr-control:
   border: 1px solid #FFFFFF1A;
   padding: 15px;
   border-radius: 20px;
+  position: relative;
+  z-index: 999;
 }
 .operation-btn{
   padding: 10px;
