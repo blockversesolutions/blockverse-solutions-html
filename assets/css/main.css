@@ -1284,6 +1284,37 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.dtr-expanded > td.dtr-control:
   cursor: pointer;
   border-radius: 10px;
   border-bottom: 1px solid #FFFFFF1A;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+/* Smooth transition for images */
+.tabcontent img {
+    opacity: 0;
+    transform: scale(0.5);
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+
+/* Show image smoothly when tab becomes active */
+.tabcontent.active img {
+    opacity: 1;
+    transform: scale(1);
+}
+/* Active button effect */
+.operation-btn.active {
+  background-color: #007bff; /* Change to your preferred active color */
+  color: white;
+  transform: scale(1.05);
+}
+/* Smooth fade transition for tab content */
+.tabcontent {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+/* Show tab content with fade effect */
+.tabcontent.active {
+  display: block;
+  opacity: 1;
 }
 .operation-btn h4{
   font-size:28px;

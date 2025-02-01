@@ -139,20 +139,38 @@ $(window).on("load", function () {
   $("#preloader").delay(500).fadeOut("slow");
   $("body").delay(500).css({ opacity:1 });
  });
- 
-function operations(evt, operations_country) {
-  var i, tabcontent, tablinks;
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablinks");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
-  }
-  document.getElementById(operations_country).style.display = "block";
-  evt.currentTarget.className += " active";
-}
 
-// Get the element with id="defaultOpen" and click on it
+ var currentIndex = 0;
+var tablinks = document.getElementsByClassName("tablinks");
+var tabcontents = document.getElementsByClassName("tabcontent");
+
+function operations(evt, operations_country) {
+    for (let i = 0; i < tabcontents.length; i++) {
+        tabcontents[i].classList.remove("active");
+        tablinks[i].classList.remove("active");
+    }
+    let currentTab = document.getElementById(operations_country);
+    currentTab.classList.add("active");
+    if (evt) {
+        evt.currentTarget.classList.add("active");
+        currentIndex = Array.from(tablinks).indexOf(evt.currentTarget);
+    } else {
+        tablinks[currentIndex].classList.add("active");
+    }
+}
+// Function to cycle tabs automatically
+function autoChangeTab() {
+    currentIndex = (currentIndex + 1) % tablinks.length;
+    tablinks[currentIndex].click();
+}
+// Set interval for auto tab change every 5 seconds
+var autoTabInterval = setInterval(autoChangeTab,3000);
+// Stop auto change on user click, restart after inactivity
+for (let i = 0; i < tablinks.length; i++) {
+    tablinks[i].addEventListener("click", function () {
+        clearInterval(autoTabInterval);
+        autoTabInterval = setInterval(autoChangeTab,10000);
+    });
+}
+// Open the default tab initially
 document.getElementById("defaultOpen").click();
