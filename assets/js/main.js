@@ -1,14 +1,5 @@
 
 jQuery(document).ready(function ($) {
-  if ($('.data-show-table').length) {  
-    $('.data-show-table').DataTable({
-        responsive: true,
-        searching: false,
-        ordering: false,
-        info: false,
-        paging: false,
-    });
-  }
     // menu bg add
     function checkScroll() {
       if ($(window).scrollTop() > 50) {
@@ -17,32 +8,6 @@ jQuery(document).ready(function ($) {
           $(".header-area").removeClass("menu-bg");
       }
     }
-    $('.product-slider').slick({
-      slidesToShow:3,
-      slidesToScroll: 1,
-      autoplay:false,
-      arrows: true,
-      centerMode: true,
-      prevArrow: $('.testimonial-left'),
-      nextArrow: $('.testimonial-right'),
-      responsive: [ 
-        {
-          breakpoint:991,
-          settings: {
-            slidesToShow: 2,
-            centerMode: false,
-          },
-        },
-        {
-          breakpoint:580,
-          settings: {
-            slidesToShow: 1,
-            centerMode: false,
-            dots:true,
-          },
-        },
-      ],
-    });
     $(document).on("click", function (event) {
       const $div = $("#outside-click");
       const $navbarText = $("#navbarText");
@@ -59,22 +24,7 @@ jQuery(document).ready(function ($) {
       checkScroll();
     });
 })
-function handleResize() {
-  // Select all tables with the class "mobile-view-table"
-  const elements = document.querySelectorAll('.mobile-view-table');
-  elements.forEach((element) => {
-    // Add or remove the "nowrap" class based on the window size
-    if (window.innerWidth <= 991) {
-      element.classList.add('nowrap');
-    } else {
-      element.classList.remove('nowrap');
-    }
-  });
-}
-
-// Run handleResize on page load and attach it to the resize event
-handleResize();
-window.addEventListener('resize', handleResize);
+ 
  // Smooth scroll with offset
  document.querySelectorAll('.nav-link').forEach(link => {
   link.addEventListener('click', event => {
