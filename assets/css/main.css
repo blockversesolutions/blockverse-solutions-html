@@ -245,7 +245,7 @@ button:focus:not(:focus-visible) {
 	background-repeat: no-repeat;
 	padding-bottom: 90px;
 	background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), 
-		url('../images/bg/bg-1.png');
+		url('../images/bg/bg-1.webp');
 }
 .gradient-color {
   background: linear-gradient(90deg, #FFB0B0, #9d3333);
@@ -1018,7 +1018,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.dtr-expanded > td.dtr-control:
   bottom:10px;
 }
 .info-section {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('../images/bg/bg-2.png');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('../images/bg/bg-2.webp');
   background-size: cover;
   background-position: center center;
   padding-top: 70px;
@@ -1350,4 +1350,10 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.dtr-expanded > td.dtr-control:
 /* On hover, make the thumb darker */
 .simplebar-scrollbar:hover::before {
   background-color: #d84315;
+}
+.faq-thumbnails img{
+  max-width: 877px;
+  max-height:679px;
+  width: 100%;
+  height: 100%;
 }
