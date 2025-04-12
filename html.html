@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <style>
+    /* Reset & Base styles */
+ 
+ 
+    .outside {
+      display: flex;
+      align-items: center;
+    }
+
+    .out {
+      position: relative;
+      padding:4px;
+      border-radius: 0.5rem;
+      background-color: #1A1135; /* neutral-600 */
+      overflow: hidden;
+    }
+    .glow {
+      position: absolute;
+      width:60px;
+      height:60px;
+      top: 0;
+      left: 0;
+      background: radial-gradient(#764AF9, #764AF9);
+      transform: rotate(45deg);
+      animation: move 5s linear infinite;
+      backdrop-filter: blur(3px);
+      offset-path: rect(0% auto 100% auto);
+    }
+
+    @keyframes move {
+      0% {
+        offset-distance: 0%;
+      }
+      100% {
+        offset-distance: 100%;
+      }
+    }
+
+    .inner {
+      position: relative;
+      z-index: 10;
+      background-color: #1A1135;
+      border-radius: 0.5rem;
+      padding:0px;
+      display: inline-block;
+    }
+
+ 
+  </style>
+</head>
+<body class="">
+  <div class="outside">
+    <div class="out">
+      <div class="glow"></div>
+      <div class="inner">
+       <div class="d-inline-block btn-outline">
+        <a href="#" class="primary-btn">Start Your Project Start Your Project <i class="fa-solid fa-arrow-right"></i></a>
+       </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

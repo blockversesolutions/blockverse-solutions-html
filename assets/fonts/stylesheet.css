@@ -1,0 +1,144 @@
+@font-face {
+    font-family: 'Sherika';
+    src: url('Sherika-BlackItalic.woff2') format('woff2'),
+        url('Sherika-BlackItalic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sherika';
+    src: url('Sherika-Bold.woff2') format('woff2'),
+        url('Sherika-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sherika';
+    src: url('Sherika-BlackItalic.woff2') format('woff2'),
+        url('Sherika-BlackItalic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sherika';
+    src: url('Sherika-ExtraBoldItalic.woff2') format('woff2'),
+        url('Sherika-ExtraBoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sherika ExtBd';
+    src: url('Sherika-ExtraBold.woff2') format('woff2'),
+        url('Sherika-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sherika';
+    src: url('Sherika-Italic.woff2') format('woff2'),
+        url('Sherika-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sherika';
+    src: url('Sherika-Black.woff2') format('woff2'),
+        url('Sherika-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sherika';
+    src: url('Sherika-BoldItalic.woff2') format('woff2'),
+        url('Sherika-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sherika';
+    src: url('Sherika-LightItalic.woff2') format('woff2'),
+        url('Sherika-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sherika';
+    src: url('Sherika-Light.woff2') format('woff2'),
+        url('Sherika-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sherika';
+    src: url('Sherika-MediumItalic.woff2') format('woff2'),
+        url('Sherika-MediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sherika Med';
+    src: url('Sherika-Medium.woff2') format('woff2'),
+        url('Sherika-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sherika';
+    src: url('Sherika-Regular.woff2') format('woff2'),
+        url('Sherika-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sherika';
+    src: url('SherikaBlack.woff2') format('woff2'),
+        url('SherikaBlack.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sherika';
+    src: url('Sherika-ThinItalic.woff2') format('woff2'),
+        url('Sherika-ThinItalic.woff') format('woff');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sherika';
+    src: url('Sherika-Thin.woff2') format('woff2'),
+        url('Sherika-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+

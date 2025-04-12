@@ -1,0 +1,74 @@
+@keyframes moveDown {
+    0% {
+      height:10%;
+    }
+     
+    100% {
+      
+      height: 100%;
+    }
+  }
+  .move-down-animation{
+    animation: moveDown 4s linear infinite;
+  }
+@keyframes moveup {
+    0% {
+      height:100%;
+    }
+     
+    100% {
+     
+      height: 10%;
+    }
+  }
+  .move-up-animation{
+    animation: moveup 4s linear infinite;
+  }
+@keyframes moveRights {
+    0% {
+      width: 0%;
+    }
+     
+    100% {
+      width:100%;
+    }
+  }
+  .move-right-animation{
+    animation: moveRights 2s linear infinite;
+  }
+  @keyframes scaleLine {
+    0% {
+      transform: scaleX(0.3);
+      opacity: 0.3;
+    }
+    100% {
+      transform: scaleX(1);
+      opacity: 1;
+    }
+    
+  }
+  .scaleLine{
+    animation: scaleLine 4s ease-in-out infinite;
+  }
+
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  @keyframes fadeInDown {
+    0% {
+        opacity:0;
+      transform: translateY(-20px);
+      
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+  }
