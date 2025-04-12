@@ -52,7 +52,7 @@
 	bottom: 0;
 	right: 0;
 	margin: auto;
-	border-bottom: 2px solid #da051a9d;
+	border-bottom: 2px solid #8773c4;
 	border-radius: 50%;
 	-webkit-animation: rotatingPlus 1s linear infinite;
 			animation: rotatingPlus 1s linear infinite;
@@ -70,7 +70,7 @@
 	bottom: 0;
 	right: 0;
 	margin: auto;
-	border-top: 2px solid #DA051B ;
+	border-top: 2px solid #764AF9 ;
 	border-radius: 50%;
 	-webkit-animation: rotatingMinus 5s linear infinite;
 			animation: rotatingMinus 5s linear infinite;
