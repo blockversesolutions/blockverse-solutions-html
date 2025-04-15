@@ -1,27 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
 .tabs {
     display: flex;
     gap: 1rem;
     margin-bottom: 30px;
     flex-wrap: wrap;
   }
-
   .tab {
-    padding:16px 30px;
+    padding: 10px 26px;
     background: #1e1e3f;
     border-radius: 8px;
-     font-size:24px;
+    font-size: 20px;
     color: white;
-    font-weight:500;
+    font-weight: 500;
     cursor: pointer;
-    gap:14px;
+    gap: 14px;
     display: flex;
     position: relative;
     align-items: center;
     transition: 0.3s;
     backdrop-filter: blur(30px);
     box-shadow: -4px -6px 20px 0px #764AF9B2 inset;
-
-  }
+}
+.tab img{
+  width:25px;
+}
   .tab:after{
     position: absolute;
     right:0;
@@ -33,11 +35,9 @@
     background-size:100% 100%;
     background-repeat: no-repeat;
     }
-
   .tab.active {
     background: #764AF9;  
   }
-
   .code-container {
     background-color: #15212D;
     padding: 1rem;
@@ -48,8 +48,8 @@
     line-height: 1.6;
     white-space: pre-wrap;
     min-height: 450px;
+    font-family: "Fira Code", monospace;
   }
-
   .comment   { color: #6a9955; }
   .keyword   { color: #c586c0; }
   .string    { color: #dcdcaa; }

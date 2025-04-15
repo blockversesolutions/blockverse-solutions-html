@@ -176,7 +176,7 @@ border-color:#764AF9;
   cursor: pointer;
 }
 .primary-btn{
-  padding: 13px 30px;
+  padding: 12px 30px;
   background: #764AF9;
   border: 1px solid #FFFFFF33;
   border-radius: 10px;
@@ -585,7 +585,7 @@ border-color:#764AF9;
  .about-section{
   padding: 120px 0;
   background-image:url(../images/bg/bg-2.webp);
-  background-size: 100% 100%;
+  background-size: cover;
   background-position:center center;
   background-repeat: no-repeat;
  }
@@ -856,6 +856,7 @@ border-color:#764AF9;
 }
 .contact-section{
   padding: 80px 0;
+  padding-bottom: 120px;
 }
 .testimonial-area{
   background-image: url('../images/bg/bg-4.png');
@@ -966,6 +967,12 @@ border-color:#764AF9;
 }
 .project-section{
   padding-top: 150px;
+  background-repeat: no-repeat;
+  background-image: url(../images/bg/8.png);
+  background-size: 100% 20%;
+  background-position: bottom center;
+  padding-bottom: 100px;
+
 }
 .pricing-header:after{
   content: "";
@@ -1074,7 +1081,7 @@ border-color:#764AF9;
     opacity: 1;
   }
   100% {
-    transform: translateY(-150px) translateX(40px);
+    transform: translateY(-350px) translateX(40px);
     opacity: 0;
   }
 }
@@ -1142,7 +1149,7 @@ border-color:#764AF9;
   position: relative;
   z-index: 10;
   background-color: #1A1135;
-  border-radius: 0.5rem;
+  border-radius:10px;
   padding:0px;
   display: inline-block;
 }
@@ -1150,6 +1157,82 @@ border-color:#764AF9;
  /* button animation css end */
 
 
- /* Group 1413372767 */
-
+ /* Start ellipse code */
+ .section-shape,.section-shape-rounded,.section-shape-circle{
+  position: relative;
+ }
+ .section-shape:after {
+  content: "";
+  position: absolute;
+  top:-15%;
+  left: 0;
+  right: 0;
+  z-index: -2;
+  margin: 0 auto;
+  height: 100%;
+  width: 95%;
+  background-image: url('../images/shape/4.png');
+  background-size: 100% auto;
+  opacity: 0.8;
+  background-repeat: no-repeat;
+}
+.section-shape-rounded:after {
+  content: "";
+  position: absolute;
+  top: -10%;
+  left: 0;
+  right: 0;
+  height:655px;
+  margin: auto;
+  z-index: -2;
+  max-width:1206px;
+  width:100%;
+  background-image: url('../images/shape/6.png');
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+.section-shape-circle:before {
+  content: "";
+  position: absolute;
+  top:-15%;
+  right: 0%;
+  height:60%;
+  z-index: -2;
+  width:30%;
+  background-image: url('../images/shape/7.png');
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+ 
+}
+.ellipse{
+  position: absolute;
+  background: #764AF9;
+  filter: blur(125px);
+  width: 300px;
+  height: 600px;
+ }
+ .ellipse-1{
+  opacity: 0.3;
+  left: -5%;
+  top: 30%;
+ }
+ .ellipse-sm{
+  position: absolute;
+  background: #764AF9;
+  filter: blur(125px);
+  height: 175px;
+  width: 234px;
+  opacity: 0.6;
+  border-radius: 50%;
+ }
+ .ellipse-2{
+  left:5%;
+  top:0%;
+ }
+ .ellipse-3{
+  right:5%;
+  top:0%;
+  opacity:0.5;
+ }
+ /* End ellipse code */
  
