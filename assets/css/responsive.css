@@ -2,16 +2,17 @@
   .navbar-nav {
     gap:15px;
   }
-  .hero-sub-card-2{
-    right: -15%;
-    bottom: 20px;
-  }
-  .hero-sub-card-3{
-    right: -15%;
-    top: 20px;
-  }
+   
 }
 @media screen and (max-width:1199px) {
+  .hero-section{
+    padding-top: 265px;
+  }
+  .navbar.navbar-expand-xl{
+    background:#25174c;
+    position: absolute;
+    width:100%;
+  }
   .common-heading-section h1 {
     font-size: 50px;
     line-height: 65px;
@@ -27,60 +28,45 @@
   .navbar-nav{
     margin-top: 30px;
   }
-  .subtract-text span {
-    font-size: 33px;
-    line-height: 40px;
-    padding: 10px 25px;
-    border: 6px solid #000;
-    width: 85%;
+  .nav-item > a {
+    padding: 12px 16px;
+    border-bottom:1px solid transparent;
+}
+.hero-section{
+  overflow-x: hidden;
+}
+.footer-description::after {
+  display: none;
   }
-  .subtract-text {
-    text-align: center;
+  .services-section:after {
+    background-size: cover;
   }
 }
 @media screen and (max-width: 991px) {
-  .common-heading-section h4 {
-    font-size: 34px;
-    line-height: 35px;
+  .services-section {
+    padding-top: 90px;
   }
-  .faq-thumbnails{
+  .pricing-section,.project-section {
+    padding-top: 90px;
+}
+  .section-shape-rounded:after {
+    top: -3%;
+}
+  .section-shape:after {
+    top: -3%;
+}
+  .footer-bottom{
+    padding-top: 30px;
+  }
+  .footer-description{
+    padding-bottom: 60px;
+  }
+  .footer-area{
+    flex-wrap: wrap;
+  }
+  .footer-description {
+    width: 100%;
     text-align: center;
-  }
-  .faq-thumbnails img{
-    margin: 0 auto;
-    width: 80% !important;
-  }
-  .trading-country-section{
-    overflow-x: hidden;
-  }
-  .ellipse{
-    width: 350px;
-    height: 350px;
-    z-index:-2;
-  }
-  .ellipse-1,.ellipse-5,.ellipse-7{
-    right:0%;
-  }
-  .ellipse-2,.ellipse-4,.ellipse-6{
-    left:0%;
-  }
-  .common-heading-section h1 {
-    font-size: 40px;
-    line-height:50px;
-  }
-  .common-heading-section h3 {
-    font-size: 32px;
-    line-height:40px;
-  }
-  .primary-btn,.secondary-btn {
-    padding: 14px 28px;
-    gap: 5px;
-  }
-  .btn-sm {
-    font-size: 15px;
-    height: 40px;
-    min-width: 144px;
-    padding:8px;
   }
   .nav-item > a{
     padding: 10px;
@@ -92,154 +78,48 @@
     margin-bottom:0px;
   }
   .hero-section {
-    padding-top:0px;
-  }
-  .ico-box {
-    padding: 30px 15px;
-  }
-  .mt-70 {
-    margin-top: 50px;
+    padding-top:190px;
   }
   .header-right {
     margin-top: 25px;
   }
-  .logo-img img{
-    display: none;
+  .common-heading h1 {
+    font-size: 40px;
   }
-  .mt-100 {
-    margin-top: 80px;
+  .common-heading h2 {
+    font-size: 34px;
   }
-  .clients-trading-table{
-    margin-top: 0;
+  .common-heading p {
+    font-size: 16px;
   }
-  .mt-140{
-    margin-top: 100px;
-  }
-  .step-card{
-    justify-content: space-between;
-  }
+  .badge-label {
+    padding: 10px 20px;
+    font-size: 15px;
+}
+.primary-btn {
+  padding: 10px 26px;
+  font-size: 16px;
+}
+.navbar-brand img {
+  max-width: 205px;
+  height: 45px;
+}
 }
 @media screen and (max-width:767px) {
-  .hero-section{
-    overflow-x: hidden;
-  }
-  .copyright{
-    margin-top: 20px;
-  }
-  .blog-content h4 {
-    font-size: 28px;
-  }
-  .after-bar::after {
-   display: none;
-  }
-  .footer-logo {
-    margin-bottom: 40px;
-    width: 100%;
-    text-align: center;
-  }
-  .contact-info, .contact-form {
-    padding: 35px 12px;
-  }
-  .country-list ul li img{
-    width: 25px;
-    height: 25px;
-  }
-  .country-list ul li {
-    font-size: 15px;
-    border: 1.5px solid #DA001766;
-    padding:6px 12px;
-    backdrop-filter: blur(20px);
-  }
-  .primary-btn, .secondary-btn {
-    padding: 12px 24px;
-  }
-  .btn-list ul {
-    gap:10px;
-  }
-  .common-heading-section h1 {
-    font-size: 36px;
-    line-height: 46px;
-  }
-  .common-heading-section h3 {
-    font-size: 28px;
+  .common-heading h1 {
+    font-size: 32px;
     line-height: 40px;
-  }
-  p{
-    font-size: 16px;
-  }
-  .secondary-btn, .tab-btn ul li {
-    padding: 8px 20px;
-    font-size: 16px;
-    gap:8px;
-  }
-  .accordion-button:not(.collapsed) {
-    font-size: 24px;
-  }
-  .hero-sub-card-1 {
-    left: 0;
-    bottom: 125px;
-  }
-  .hero-sub-card h5 {
-    font-size: 20px;
-    line-height: 24px;
-  }
-  .hero-sub-card p{
-    font-size: 14px;
-  }
-  .accordion-header {
-    padding: 8px 22px;
-    font-size: 20px;
-  }
-  .accordion-content p{
-    margin: 12px 20px;
-  }
-  .simplebar-height{
-    height: 300px !important;
-  }
+}
+.contact-info ul li a{
+  font-size: 15px;
+}
+   
 }
 @media screen and (max-width:580px) {
-  .hero-sub-card {
-    display: none;
-  }
-  body{
-    overflow-x: hidden;
-  }
-  .clients-trading-table table tr td {
-    font-size: 14px;
-  }
-  .clients-trading-table table tr td, .clients-trading-table table tr th {
-    padding: 10px 5px;
-  }
-  .table-card {
-    padding: 10px;
-  }
-  .clients-trading-table table tr th {
-    font-size: 14px;
-  }
-  p{
-    font-size: 15px;
-  }
+ 
   .navbar {
     padding-left:0px;
     padding-right:0px;
   }
-  .primary-btn,.secondary-btn{
-    font-size: 14px;
-  }
-  .navbar-brand img {
-    max-width: 190px;
-  }
-  .nav-item > a {
-    font-size: 15px;
-    padding: 5px 10px;
-  }
-  .primary-btn img, .secondary-btn img {
-    width: 16px;
-  }
-  .blockquote{
-    padding-left: 20px;
-  }
-  .post-option{
-    margin-top: 10px;
-  }
+   
 }

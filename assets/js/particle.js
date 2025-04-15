@@ -1,6 +1,6 @@
 const areas = document.querySelectorAll(".particle-area");
 
-areas.forEach(area => {
+areas.forEach((area) => {
   area.style.position = "relative";
 
   const numParticles = parseInt(area.getAttribute("data-particles")) || 30;
