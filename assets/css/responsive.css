@@ -105,8 +105,36 @@
   max-width: 205px;
   height: 45px;
 }
+.pagination-section{
+  background-size: cover;
+  padding-top: 150px;
+  padding-bottom: 80px;
+}
+.about-section {
+  padding: 90px 0;
+}
+.testimonial-section {
+  padding-top:90px;
+}
+.team-section:after {
+  background-size: cover;
+  opacity: 0.4;
+}
+.team-section {
+  padding-bottom: 90px;
+}
+.cta-area{
+  background-size: cover;
+}
+.choose-accordion .accordion-button {
+  font-size: 20px;
+  padding: 8px 18px;
+}
 }
 @media screen and (max-width:767px) {
+  .simplebar-height{
+    display: none !important;
+  }
   .common-heading h1 {
     font-size: 32px;
     line-height: 40px;

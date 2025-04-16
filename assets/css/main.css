@@ -1452,3 +1452,12 @@ border-color:#764AF9;
   background-repeat: no-repeat;
   top: -50%;
 }
+
+/* .simplebar-scrollbar::before {
+  background-color: #774CF9;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+}
+.simplebar-scrollbar:hover::before {
+  background-color: #774CF9;
+} */
