@@ -126,5 +126,11 @@
     padding-left:0px;
     padding-right:0px;
   }
+  .footer-pagination{
+    margin-bottom: 20px;
+  }
+  .footer-pagination h4{
+    margin-bottom: 0;
+  }
    
 }

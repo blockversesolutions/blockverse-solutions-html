@@ -44,3 +44,37 @@ $(window).on("load", function () {
   $("body").delay(500).css({ opacity:1 });
  });
  
+ var currentIndex = 0;
+var tablinks = document.getElementsByClassName("tablinks");
+var tabcontents = document.getElementsByClassName("tabcontent");
+
+function operations(evt, operations_country) {
+    for (let i = 0; i < tabcontents.length; i++) {
+        tabcontents[i].classList.remove("active");
+        tablinks[i].classList.remove("active");
+    }
+    let currentTab = document.getElementById(operations_country);
+    currentTab.classList.add("active");
+    if (evt) {
+        evt.currentTarget.classList.add("active");
+        currentIndex = Array.from(tablinks).indexOf(evt.currentTarget);
+    } else {
+        tablinks[currentIndex].classList.add("active");
+    }
+}
+// Function to cycle tabs automatically
+function autoChangeTab() {
+    currentIndex = (currentIndex + 1) % tablinks.length;
+    tablinks[currentIndex].click();
+}
+// Set interval for auto tab change every 5 seconds
+var autoTabInterval = setInterval(autoChangeTab,3000);
+// Stop auto change on user click, restart after inactivity
+for (let i = 0; i < tablinks.length; i++) {
+    tablinks[i].addEventListener("click", function () {
+        clearInterval(autoTabInterval);
+        autoTabInterval = setInterval(autoChangeTab,5000);
+    });
+}
+// Open the default tab initially
+document.getElementById("defaultOpen").click();
