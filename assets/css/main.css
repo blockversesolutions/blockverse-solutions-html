@@ -23,10 +23,12 @@ h1 {
   line-height: 48px;
   margin-top: 16px;
   margin-bottom: 16px;
+  color:#fff;
   font-weight: 600;
   letter-spacing: -0.2px;
 }
 h2 {
+  color:#fff;
   font-size: 32px;
   line-height: 42px;
   margin-top: 16px;
@@ -79,7 +81,7 @@ button {
 .primary-btn.nav-link.active {
   color: #fff !important;
 }
-.input-group input {
+.input-group input{
   outline: none;
   border: none;
   background-color: transparent;
@@ -1111,7 +1113,21 @@ button:focus:not(:focus-visible) {
   background: #ffffff0d;
   letter-spacing: 1px;
 }
-
+.counter-item p{
+  font-size:18px;
+}
+.counter-item h3{
+  font-size:36px;
+  color:#fff;
+}
+.counter-item{
+  border-right: 2px solid #FFFFFF1A;
+  padding-right:7%;
+}
+.counter-item:last-child{
+  padding-right:0;
+  border: none;
+}
 /* Start particle effect css */
 .particle {
   position: absolute;
@@ -1269,6 +1285,16 @@ button:focus:not(:focus-visible) {
 .ellipse-4 {
   right: 0%;
   top: -15%;
+  opacity: 0.2;
+}
+.ellipse-5 {
+  right: 0%;
+  top:30%;
+  opacity: 0.2;
+}
+.ellipse-6 {
+  left: 0%;
+  top:0%;
   opacity: 0.2;
 }
 /* End ellipse code */
@@ -1480,6 +1506,11 @@ button:focus:not(:focus-visible) {
 .mt-120 {
   margin-top: 120px;
 }
+.policy-section ul li{
+  color:#fff;
+}
+
+
 /* .simplebar-scrollbar::before {
   background-color: #774CF9;
   border-radius: 10px;

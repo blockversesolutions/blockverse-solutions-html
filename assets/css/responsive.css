@@ -132,8 +132,25 @@
   .btn-3{
     padding:5px 10px;
   }
+  .counter-item{
+    border: none;
+    padding-right:0;
+  }
+  
 }
 @media screen and (max-width: 767px) {
+  .counter-item p{
+    font-size: 16px;
+    line-height: 25px;
+  }
+  .counter-area{
+    flex-wrap: wrap;
+    padding: 20px !important;
+    row-gap:20px;
+  }
+  .counter-item{
+    width:50%;
+  }
   .simplebar-height {
     display: none !important;
   }
