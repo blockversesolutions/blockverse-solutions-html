@@ -1,17 +1,16 @@
-@media screen and (min-width:1480px) {
+@media screen and (min-width: 1480px) {
   .navbar-nav {
-    gap:15px;
+    gap: 15px;
   }
-   
 }
-@media screen and (max-width:1199px) {
-  .hero-section{
+@media screen and (max-width: 1199px) {
+  .hero-section {
     padding-top: 265px;
   }
-  .navbar.navbar-expand-xl{
-    background:#25174c;
+  .navbar.navbar-expand-xl {
+    background: #25174c;
     position: absolute;
-    width:100%;
+    width: 100%;
   }
   .common-heading-section h1 {
     font-size: 50px;
@@ -25,61 +24,61 @@
     margin-top: 40px;
     padding-bottom: 40px;
   }
-  .navbar-nav{
+  .navbar-nav {
     margin-top: 30px;
   }
   .nav-item > a {
     padding: 12px 16px;
-    border-bottom:1px solid transparent;
-}
-.hero-section{
-  overflow-x: hidden;
-}
-.footer-description::after {
-  display: none;
+    border-bottom: 1px solid transparent;
+  }
+  .hero-section {
+    overflow-x: hidden;
+  }
+  .footer-description::after {
+    display: none;
   }
   .services-section:after {
     background-size: cover;
   }
-  
 }
 @media screen and (max-width: 991px) {
   .services-section {
     padding-top: 90px;
   }
-  .pricing-section,.project-section {
+  .pricing-section,
+  .project-section {
     padding-top: 90px;
-}
+  }
   .section-shape-rounded:after {
     top: -3%;
-}
+  }
   .section-shape:after {
     top: -3%;
-}
-  .footer-bottom{
+  }
+  .footer-bottom {
     padding-top: 30px;
   }
-  .footer-description{
+  .footer-description {
     padding-bottom: 60px;
   }
-  .footer-area{
+  .footer-area {
     flex-wrap: wrap;
   }
   .footer-description {
     width: 100%;
     text-align: center;
   }
-  .nav-item > a{
+  .nav-item > a {
     padding: 10px;
   }
   .navbar-collapse {
     margin-top: 25px;
   }
   .header-area {
-    margin-bottom:0px;
+    margin-bottom: 0px;
   }
   .hero-section {
-    padding-top:190px;
+    padding-top: 190px;
   }
   .header-right {
     margin-top: 25px;
@@ -96,69 +95,73 @@
   .badge-label {
     padding: 10px 20px;
     font-size: 15px;
+  }
+  .primary-btn {
+    padding: 10px 26px;
+    font-size: 16px;
+  }
+  .navbar-brand img {
+    max-width: 205px;
+    height: 45px;
+  }
+  .pagination-section {
+    background-size: cover;
+    padding-top: 150px;
+    padding-bottom: 80px;
+  }
+  .about-section {
+    padding: 90px 0;
+  }
+  .testimonial-section {
+    padding-top: 90px;
+  }
+  .team-section:after {
+    background-size: cover;
+    opacity: 0.4;
+  }
+  .team-section {
+    padding-bottom: 90px;
+  }
+  .cta-area {
+    background-size: cover;
+  }
+  .choose-accordion .accordion-button {
+    font-size: 20px;
+    padding: 8px 18px;
+  }
+  .btn-3{
+    padding:5px 10px;
+  }
 }
-.primary-btn {
-  padding: 10px 26px;
-  font-size: 16px;
-}
-.navbar-brand img {
-  max-width: 205px;
-  height: 45px;
-}
-.pagination-section{
-  background-size: cover;
-  padding-top: 150px;
-  padding-bottom: 80px;
-}
-.about-section {
-  padding: 90px 0;
-}
-.testimonial-section {
-  padding-top:90px;
-}
-.team-section:after {
-  background-size: cover;
-  opacity: 0.4;
-}
-.team-section {
-  padding-bottom: 90px;
-}
-.cta-area{
-  background-size: cover;
-}
-.choose-accordion .accordion-button {
-  font-size: 20px;
-  padding: 8px 18px;
-}
-}
-@media screen and (max-width:767px) {
-  .simplebar-height{
+@media screen and (max-width: 767px) {
+  .simplebar-height {
     display: none !important;
   }
   .common-heading h1 {
     font-size: 32px;
     line-height: 40px;
-}
-.contact-info ul li a{
-  font-size: 15px;
-}
-.common-heading h2 {
-  font-size: 28px;
-  line-height:36px;
-}
-   
-}
-@media screen and (max-width:580px) {
- 
-  .navbar {
-    padding-left:0px;
-    padding-right:0px;
   }
-  .footer-pagination{
+  .contact-info ul li a {
+    font-size: 15px;
+  }
+  .common-heading h2 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+}
+@media screen and (max-width: 580px) {
+  .navbar {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .footer-pagination {
     margin-bottom: 20px;
   }
-  .footer-pagination h4{
+  .footer-pagination h4 {
     margin-bottom: 0;
   }
-   
+  body {
+    overflow-x: hidden;
+  }
 }
+ 

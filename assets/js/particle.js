@@ -20,3 +20,5 @@ areas.forEach((area) => {
     area.appendChild(particle);
   }
 });
+
+ 
