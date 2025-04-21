@@ -27,7 +27,7 @@ jQuery(document).ready(function ($) {
     nextArrow: $('.emerging-technology-right'),     
     slidesToScroll: 1, 
     centerPadding: '0px',  
-    autoplay: false,      
+    autoplay: true,      
     autoplaySpeed: 1500,  
     centerMode: true,
     responsive: [
@@ -54,7 +54,7 @@ jQuery(document).ready(function ($) {
     prevArrow: $('.awards-left'),
     nextArrow: $('.awards-right'),     
     slidesToScroll: 1, 
-    autoplay: false,      
+    autoplay: true,      
     autoplaySpeed:1800,
     responsive: [
       {
