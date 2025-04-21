@@ -1087,7 +1087,7 @@ button:focus:not(:focus-visible) {
   cursor: pointer;
 }
 .card-hover:hover {
-  transform: translateY(-20px);
+  /* transform: translateY(-20px); */
   box-shadow: 0px 20px 70px 0px #764af980;
 }
 .card-hover:hover .hover-show {
@@ -1117,7 +1117,7 @@ button:focus:not(:focus-visible) {
   font-size:18px;
 }
 .counter-item h3{
-  font-size:36px;
+  font-size:42px;
   color:#fff;
 }
 .counter-item{
@@ -1284,7 +1284,7 @@ button:focus:not(:focus-visible) {
 }
 .ellipse-4 {
   right: 0%;
-  top: -15%;
+  top:50%;
   opacity: 0.2;
 }
 .ellipse-5 {
@@ -1297,6 +1297,17 @@ button:focus:not(:focus-visible) {
   top:0%;
   opacity: 0.2;
 }
+.ellipse-7 {
+  right: 0;
+  opacity: 0.2;
+  top: 10%;
+}
+.ellipse-8{
+  left: 0;
+  opacity: 0.2;
+  top: 20%;
+}
+
 /* End ellipse code */
 /* Start About Page */
 .pagination-section {
@@ -1337,6 +1348,7 @@ button:focus:not(:focus-visible) {
   background-color: transparent;
   color: #fff !important;
   padding: 12px 30px;
+  line-height:38px;
 }
 .choose-accordion .accordion-item {
   background: #ffffff08;
@@ -1362,7 +1374,7 @@ button:focus:not(:focus-visible) {
   box-shadow: -1px -4px 20px 0px #764af9b2 inset !important;
 }
 .choose-accordion .accordion-button::after {
-  filter: brightness(0) invert(1); /* Makes the default arrow white */
+  filter: brightness(0) invert(1);
 }
 .team-content h4 {
   font-size: 28px;
@@ -1376,7 +1388,7 @@ button:focus:not(:focus-visible) {
   font-weight: 400;
   margin-bottom: 20px;
   font-size: 18px;
-}
+} 
 
 /* End About Page */
 /* Smooth transition for images */
@@ -1456,10 +1468,14 @@ button:focus:not(:focus-visible) {
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
+ 
 .cta-section .common-heading {
   max-width: 805px;
   width: 100%;
   margin: 0 auto;
+}
+.ptb-120{
+  padding:120px 0;
 }
 .motion-shadow {
   position: relative;
@@ -1509,8 +1525,6 @@ button:focus:not(:focus-visible) {
 .policy-section ul li{
   color:#fff;
 }
-
-
 /* .simplebar-scrollbar::before {
   background-color: #774CF9;
   border-radius: 10px;
@@ -1519,5 +1533,164 @@ button:focus:not(:focus-visible) {
 .simplebar-scrollbar:hover::before {
   background-color: #774CF9;
 } */
+ 
+/* service section */
+.service-item-content{
+  text-align: center;
+}
+.service-item{
+  text-align: center;
+}
+.service-item h6{
+  font-weight:28;
+  color:#fff;
+  font-weight: 700;
+}
+.service-item h4{
+  font-weight: 499;
+  font-size: 24px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color:#fff;
+}
+.service-item p{
+  font-size:16px;
+  line-height:26px;
+  color:#fff;
+}
+.service-item-content ul li{
+  color:#fff;
+  font-size:22px;
+  line-height: 32px;
+}
 
+/* project info */
+.custom-table{
+  width: 100%;
+  border-radius: 10px;
+  padding: 20px;
+  border: 1px solid #696868;
+}
+.custom-table table tr td{
+  color:#fff;
+  padding: 15px;
+  border-bottom:1px solid #161414;
+}
+.custom-table table tr:last-child td{
+  border: none;
+}
+.custom-table table tr th{
+  color:#fff;
+  font-weight: 600;
+  background-color:#1a1135;
+  padding: 22px;
+}
+.emerging-technology-slider .slick-slide {
+  margin: 0 10px; /* Horizontal gap between slides */
+}
 
+.emerging-technology-slider {
+  margin: 0 -10px; /* Negative margin to offset the added slide margins */
+}
+
+.emerging-technology-slider .card-1 .view-details-technology{
+  display: none;
+}
+.emerging-technology-slider .slick-track,.awards-recognitions-slider .slick-track{
+  display: flex;
+  align-items: center;
+}
+.emerging-technology-slider .slick-slide {
+  opacity: 0.4;
+  transition: transform 0.6s ease;
+  transform: scale(0.9); /* smaller for all by default */
+}
+.emerging-technology-slider .slick-slide.slick-center {
+  transform: scale(1); /* larger for current */
+  opacity: 1;
+  z-index: 2;
+}
+.emerging-technology-slider .slick-slide.slick-center  .view-details-technology,.emerging-technology-slider .slick-slide.slick-center  .hover-show{
+  display: block;
+}
+.slider-btn i{
+  color:#fff;
+  font-size:20px;
+}
+.slider-btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #FFFFFF33;
+  padding: 10px;
+  height: 56px;
+  width: 56px;
+  border-radius: 5px;
+  cursor: pointer;
+  background: #764AF9;
+  transition: 0.5s;
+}
+.slider-btn:hover,.slider-btn-low-opacity{
+  backdrop-filter: blur(30px);
+  background: #FFFFFF08;
+  box-shadow: -4px -6px 20px 0px #764AF9B2 inset;
+}
+.emerging-technology-slider .project-thumbnails{
+  background: #764AF90D;
+  padding: -30px;
+}
+.emerging-technology-slider .project-thumbnails img{
+  max-width:256px !important;
+  margin: auto;
+}
+.shape-top-bg{
+  position: relative;
+}
+.shape-top-bg::before{
+  content:"";
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  background: url('../images/shape/9.webp');
+  height:100%;
+  width: 100%;
+  background-size:85% 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  top: -72%;
+  z-index: -2;
+}
+.pt-150{
+  padding-top: 150px;
+}
+.awards-recognitions-slider .project-card-cover .project-thumbnails img{
+  width:150px;
+  margin: auto;
+}
+.awards-recognitions-slider .project-card-cover .project-content h4{
+  font-size:16px;
+}
+.awards-recognitions-slider .project-card-cover .project-content p{
+  font-size:12px;
+}
+ 
+.awards-recognitions-slider .slick-slide.slick-current .project-thumbnails img{
+  width:200px;
+}
+.awards-recognitions-slider .slick-slide {
+  transition: transform 0.6s ease;
+  opacity:0.4;
+  transform: scale(0.9); /* smaller for all by default */
+}
+.awards-recognitions-slider .slick-slide.slick-current {
+  transform: scale(1); /* larger for current */
+  opacity: 1;
+  z-index: 2;
+}
+.awards-recognitions-slider .slick-slide.slick-current .project-content h4{
+ font-size:24px;
+}
+.awards-recognitions-slider .slick-slide.slick-current .project-content p{
+ font-size:18px;
+}

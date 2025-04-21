@@ -98,7 +98,7 @@
   }
   .primary-btn {
     padding: 10px 26px;
-    font-size: 16px;
+    font-size: 16px; 
   }
   .navbar-brand img {
     max-width: 205px;
@@ -136,7 +136,13 @@
     border: none;
     padding-right:0;
   }
-  
+  .cta-section{
+    background-size:cover !important;
+  }
+  .shape-top-bg:before{
+    background-size: cover;
+    opacity: 0.5;
+  }
 }
 @media screen and (max-width: 767px) {
   .counter-item p{
@@ -167,6 +173,10 @@
   }
 }
 @media screen and (max-width: 580px) {
+  .mt-120{
+    margin-top: 80px;
+  }
+ 
   .navbar {
     padding-left: 0px;
     padding-right: 0px;
