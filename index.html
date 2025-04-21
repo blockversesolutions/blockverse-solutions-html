@@ -580,22 +580,22 @@
               <div class="counter-area card-1 p-5 d-flex align-items-center justify-content-between">
                 <!-- item -->
                  <div class="counter-item text-center">
-                    <h3>10</h3>
+                    <h3><span class="counter">10</span></h3>
                     <p>Years of Experience</p>
                  </div>
                 <!-- item -->
                  <div class="counter-item text-center">
-                    <h3>120</h3>
+                    <h3><span class="counter">120</span></h3>
                     <p>Members in the team</p>
                  </div>
                  <!-- item -->
                  <div class="counter-item text-center">
-                  <h3>154</h3>
+                  <h3><span class="counter">154</span></h3>
                   <p>Successful Project</p>
                  </div>
                  <!-- item -->
                  <div class="counter-item text-center">
-                  <h3>99%</h3>
+                  <h3><span class="counter">99</span>%</h3>
                   <p>Client Retention</p>
                  </div>
               </div>
@@ -1952,6 +1952,7 @@
     <script src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.min.js"></script>
     <!-- AOS JS -->
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
     <!-- <script src="assets/js/accordion.js"></script> -->
     <script src="assets/js/type.js"></script>
     <script src="assets/js/particle.js"></script>
@@ -1961,5 +1962,29 @@
         once: true,
       });
     </script>
+    <script>
+      if ($('.counter-section').length > 0) {
+      $('.counter').each(function () {
+        var $this = $(this);
+        $this.waypoint(function () {
+          $this.prop('Counter', 0).animate({
+            Counter: $this.text()
+          }, {
+            duration: 2000,
+            easing: 'swing',
+            step: function (now) {
+              $this.text(Math.ceil(now));
+            }
+          });
+          this.destroy(); // run only once
+        }, {
+          offset: '80%'
+        });
+      });
+    }
+
+    </script>
+    
+    
   </body>
 </html>
