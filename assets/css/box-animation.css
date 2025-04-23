@@ -18,6 +18,25 @@
   mix-blend-mode: screen;
   opacity: 0.8;
 }
+.glow-2 {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  transform: rotate(45deg);
+  offset-path: rect(0% auto 100% auto);
+  mix-blend-mode: screen;
+  opacity: 0.8;
+}
+/*  Left-to-right glow: Blue */
+.glow-2.left-to-right {
+  background: radial-gradient(#764af9, #764af9, transparent);
+  animation: moveRight 7s linear infinite;
+}
+/*  Right-to-left glow: Pink */
+.glow-2.right-to-left {
+  background: radial-gradient(#764af9, #764af9, transparent);
+  animation: moveLeft 7s linear infinite;
+}
 /*  Left-to-right glow: Blue */
 .glow-1.left-to-right {
   background: radial-gradient(#764af9, #764af9, transparent);
