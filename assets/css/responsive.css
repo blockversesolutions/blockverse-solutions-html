@@ -250,6 +250,17 @@
   }
 }
 @media screen and (max-width: 580px) {
+  .pagination-list{
+    gap: 5px !important;
+  }
+  .pagination-list li span{
+    min-width:55px;
+    height:55px;
+    font-size: 14px;
+  }
+  .blog-thumbnails-sm img,.blog-thumbnails-sm{
+    max-width: 100%;
+  }
   .blog-card{
     flex-wrap: wrap;
   }

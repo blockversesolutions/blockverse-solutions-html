@@ -286,7 +286,7 @@ button:focus:not(:focus-visible) {
   color: #fff;
 }
 .primary-btn:hover:after {
-  bottom: -15px;
+  bottom: -16px;
 }
 .primary-btn i {
   font-size: 18px;
@@ -398,7 +398,7 @@ button:focus:not(:focus-visible) {
   color: #fff;
 }
 .common-heading h2 {
-  font-size: 42px;
+  font-size: 40px;
   color: #fff;
   line-height: 110%;
 }
@@ -1077,7 +1077,7 @@ button:focus:not(:focus-visible) {
   }
 }
 .testimonial-section {
-  padding-top: 150px;
+  padding-top:120px;
 }
 .bar-shape{
   position: relative;
@@ -1448,7 +1448,16 @@ button:focus:not(:focus-visible) {
   opacity: 0.2;
   bottom:0%;
 }
-
+.ellipse-16{
+  left: 0;
+  opacity: 0.2;
+  top:15%;
+}
+.ellipse-17{
+  right: 0;
+  opacity: 0.2;
+  top:5%;
+}
 /* End ellipse code */
 /* Start About Page */
 .pagination-section {
@@ -1803,7 +1812,7 @@ button:focus:not(:focus-visible) {
   z-index: -2;
 }
 .pt-150{
-  padding-top: 150px;
+  padding-top: 140px;
 }
 .pt-120{
   padding-top: 120px;
@@ -1853,7 +1862,6 @@ button:focus:not(:focus-visible) {
   z-index: -2;
   left: 0%;
 }
-
 /* working process start */
 .process-center-box{
   height: 350px;
@@ -2127,3 +2135,68 @@ table tr:last-child td:last-child {
   font-weight:500;
   color:#fff;
 }
+ .blog-info p{
+  color:#FFFFFFCC;
+  letter-spacing:1px;
+ }
+ .blog-info ul li{
+  color: #FFFFFFCC;
+ }
+ .profile-card img{
+  width:55px;
+ }
+ .profile-card{
+  font-size:24px;
+  font-weight: 500;
+  color:#fff;
+ }
+ .comment-header{
+  border-bottom: 1px solid #FFFFFF1A ;
+  padding-bottom: 20px;
+ }
+ .comment-body{
+  padding: 20px 0;
+ }
+ .circle-card{
+  border: 1px solid #764AF966;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  height: 44px;
+  width:44px;
+  background: #764AF91A;
+  transition: 0.5s;
+ }
+ .circle-card:hover{
+  background: #5e41b6b0;
+ }
+ .circle-card:hover i{
+  color:#fff;
+ }
+ .circle-card i{
+  color: #764AF9;
+ }
+ .rotate-90{
+  transform: rotate(180deg);
+ }
+ .pagination-list li span{
+  padding: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  font-size:20px;
+  border-radius: 10px;
+  min-width:60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color:#fff;
+  background: #FFFFFF08;
+  border: 1.5px solid #FFFFFF33;
+  backdrop-filter: blur(30px);
+  box-shadow: -4px -6px 20px 0px #764AF9B2 inset;
+ }
+ .pagination-list li span:hover, .pagination-list li span.active{
+  background: #764af9;
+ }
