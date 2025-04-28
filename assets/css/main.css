@@ -2201,4 +2201,13 @@ table tr:last-child td:last-child {
   background: #764af9;
  }
  
- 
+ /* pagination-list li span */
+ .primary-btn, .tab-btn li.active{
+  background-color: #211446;
+  padding: 10px 14px;
+ }
+ .pagination-list li span{
+  text-align: center;
+  padding: 10px 30px;
+  border-radius: 10px;
+ }

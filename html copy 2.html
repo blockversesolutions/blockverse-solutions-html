@@ -4,14 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
- 
-
     .div {
       height: 100vh;
       display: grid;
       place-items: center;
     }
-
     .article {
       position: relative;
       padding: 5px;
@@ -19,7 +16,6 @@
       background-color: #525252;
       overflow: hidden;
     }
-
     .glow {
       position: absolute;
       width: 400px;
@@ -29,7 +25,6 @@
       mix-blend-mode: screen;
       opacity: 0.8;
     }
-
     /* 🎨 Left-to-right glow: Blue */
     .glow.left-to-right {
       background: radial-gradient(#764AF9, #764AF9, transparent);
@@ -64,7 +59,6 @@
 <body>
   <div class="div">
     <div class="article">
-       
       <div class="glow left-to-right"></div>
       <div class="glow right-to-left"></div>
       <section class="main-text">
