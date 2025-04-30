@@ -793,7 +793,7 @@ button:focus:not(:focus-visible) {
 }
 .services-section {
   position: relative;
-  padding-top: 150px;
+  padding-top: 120px;
 }
 .services-section:after {
   content: "";
