@@ -183,6 +183,9 @@
   }
 }
 @media screen and (max-width: 767px) {
+  .time-counter{
+    gap: 2px !important;
+  }
   .dotted-shape-left,.dotted-shape-right{
     width: 100%;
   }
@@ -225,7 +228,6 @@
     font-size: 16px;
     line-height: 25px;
   }
- 
   .counter-area{
     flex-wrap: wrap;
     padding: 20px !important;

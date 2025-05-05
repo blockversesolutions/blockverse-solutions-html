@@ -181,6 +181,9 @@ button:focus:not(:focus-visible) {
 .nav-link.dropdown-toggle.show {
   color: #764af9;
 }
+.color-764{
+  color: #764af9;
+}
 .navbar-brand img {
   max-width: 275px;
   width: 100%;
@@ -698,7 +701,6 @@ button:focus:not(:focus-visible) {
   backdrop-filter: blur(30px);
   box-shadow: -4px -6px 20px 0px #764af9b2 inset;
 }
-
 .service-icon {
   box-shadow: 0px 4px 30px 0px #3c4be066;
   height: 64px;
@@ -747,7 +749,6 @@ button:focus:not(:focus-visible) {
   font-size: 30px;
   color: #fff;
 }
-
 .service-hover-card {
   position: relative;
   border: 1.5px solid #ffffff33;
@@ -758,7 +759,7 @@ button:focus:not(:focus-visible) {
 .service-hover-card:after {
   content: "";
   position: absolute;
-  left: 61px;
+  left: 61px; 
   top: -40px;
   height: 100%;
   opacity: 0.8;
@@ -812,10 +813,6 @@ button:focus:not(:focus-visible) {
   opacity: 0.8;
 }
 .social-menu li a {
-  border: 1px solid #ffffff33;
-  backdrop-filter: blur(30px);
-  box-shadow: -4px -6px 20px 0px #764af9b2 inset;
-  background: #ffffff08;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -823,6 +820,32 @@ button:focus:not(:focus-visible) {
   width: 45px;
   transition: 0.5s;
   border-radius: 5px;
+  border: 1px solid #ffffff33;
+  backdrop-filter: blur(30px);
+  box-shadow: -4px -6px 20px 0px #764af9b2 inset;
+  background: #ffffff08;
+}
+.time-counter li:nth-child(even) {
+  margin-top: -25px;
+  font-weight: 500;
+  font-size: 44px;
+  color: #fff;
+}
+.time-value {
+  display: flex;
+  padding:15px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  width:72px;
+  font-size:32px;
+  border: 1px solid #ffffff33;
+  backdrop-filter: blur(30px);
+  box-shadow: -4px -6px 20px 0px #764af9b2 inset;
+  background: #ffffff08;
+}
+.time-label{
+  text-align:center;
+  font-size: 16px;
 }
 .social-menu li a:hover {
   background: #764af9;
@@ -1015,17 +1038,14 @@ button:focus:not(:focus-visible) {
 .tabcontent.active .team-content {
   animation: fadeInUp 1.5s ease-in-out forwards;
 }
-
 .testimonial-slider-item.slick-active .testimonial-icon {
   animation: fadeInDown 1.5s ease-in-out forwards;
 }
-
 /* Default state (before active) */
 .testimonial-slider-item .rating i {
   opacity: 0;
   transform: scale(0.5);
 }
-
 /* When slick-active — animate only once */
 .testimonial-slider-item.slick-active .rating i,
 .tabcontent.active .team-social-menu .social-menu li {
@@ -1713,7 +1733,6 @@ button:focus:not(:focus-visible) {
   font-size:22px;
   line-height: 32px;
 }
-
 /* project info */
 .custom-table{
   width: 100%;
@@ -1742,7 +1761,6 @@ button:focus:not(:focus-visible) {
 .emerging-technology-slider {
   margin: 0 -10px; /* Negative margin to offset the added slide margins */
 }
-
 .emerging-technology-slider .card-1 .view-details-technology{
   display: none;
 }
@@ -2201,4 +2219,10 @@ table tr:last-child td:last-child {
   background: #764af9;
  }
  
- 
+.setting-shape{
+  position: absolute;
+  top:25%;
+  z-index: -2;
+  opacity: 0.8;
+  right: 10%;
+}
