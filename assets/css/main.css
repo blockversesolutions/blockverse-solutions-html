@@ -1209,6 +1209,15 @@ button:focus:not(:focus-visible) {
   background: #ffffff0d;
   letter-spacing: 1px;
 }
+.filter-btn.active{
+  background: #764af9;
+}
+.categories-item{
+  display: none;
+}
+.btn-3 i{
+  font-size: 18px;
+}
 .counter-item p{
   font-size:18px;
 }
