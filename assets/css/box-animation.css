@@ -47,7 +47,6 @@
   background: radial-gradient(#764af9, #764af9, transparent);
   animation: moveLeft 7s linear infinite;
 }
-
 @keyframes moveRight {
   0% {
     offset-distance: 0%;
@@ -56,7 +55,6 @@
     offset-distance: 100%;
   }
 }
-
 @keyframes moveLeft {
   0% {
     offset-distance: 100%;

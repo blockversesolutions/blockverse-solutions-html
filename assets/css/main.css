@@ -858,6 +858,7 @@ button:focus:not(:focus-visible) {
   font-weight: 400;
   font-size: 18px;
   color: #ffffffb2;
+  max-width: 540px;
 }
 .footer-section {
   position: relative;
@@ -906,12 +907,12 @@ button:focus:not(:focus-visible) {
   padding-bottom: 60px;
 }
 .footer-description {
-  width: 35%;
+  width: 50%;
 }
 .footer-description::after {
   content: "";
   position: absolute;
-  right: -50px;
+  right:0px;
   top: 5%;
   height: 118%;
   width: 1px;
@@ -2234,4 +2235,15 @@ table tr:last-child td:last-child {
   z-index: -2;
   opacity: 0.8;
   right: 10%;
+}
+.blog-info ul{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  list-style: inherit;
+  margin-left:30px;
+}
+.service-item-list{
+  padding-left: 30px;
+  list-style-type: disc;
 }

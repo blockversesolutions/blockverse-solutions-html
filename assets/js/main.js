@@ -27,7 +27,7 @@ jQuery(document).ready(function ($) {
     nextArrow: $('.emerging-technology-right'),     
     slidesToScroll: 1, 
     centerPadding: '0px',  
-    autoplay: true,      
+    autoplay: false,      
     autoplaySpeed: 1500,  
     centerMode: true,
     responsive: [
@@ -58,6 +58,12 @@ jQuery(document).ready(function ($) {
     autoplaySpeed:1800,
     responsive: [
       {
+        breakpoint:1120,
+        settings: {
+          slidesToShow: 2,
+        }
+      },
+      {
         breakpoint:767,
         settings: {
           slidesToShow: 1,
@@ -65,7 +71,6 @@ jQuery(document).ready(function ($) {
       }
     ]  
   });
-
   $(document).on("click", function (event) {
     const $div = $("#outside-click");
     const $navbarText = $("#navbarText");

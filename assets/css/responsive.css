@@ -181,8 +181,21 @@
     left: 70px;
     bottom: -65px;
   }
+  .footer-description p{
+    margin: auto;
+    margin-top: 40px;
+  }
+  .footer-area{
+    justify-content: space-around;
+  }
 }
 @media screen and (max-width: 767px) {
+.service-filter-btn .primary-btn{
+    padding: 6px 12px !important;
+  }
+  .footer-pagination ul li a{
+    font-size: 16px;
+  }
   .time-counter{
     gap: 2px !important;
   }
@@ -252,6 +265,9 @@
   }
 }
 @media screen and (max-width: 580px) {
+  .footer-pagination{
+    width: 100%;
+  }
   .pagination-list{
     gap: 5px !important;
   }

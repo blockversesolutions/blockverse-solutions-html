@@ -120,29 +120,6 @@
           </div>
       </div>
     </section>
-    <script>
-      // Set the countdown target date
-      const targetDate = new Date("2025-06-01T00:00:00").getTime(); // Change this date
-      function updateCountdown() {
-          const now = new Date().getTime();
-          const timeLeft = targetDate - now;
-          if (timeLeft <= 0) {
-            document.querySelectorAll(".time-value").forEach(el => el.textContent = "00");
-            clearInterval(countdownInterval);
-            return;
-          }
-          const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
-          const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-          const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
-          const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
-          document.querySelectorAll(".time-value")[0].textContent = days.toString().padStart(2, '0');
-          document.querySelectorAll(".time-value")[1].textContent = hours.toString().padStart(2, '0');
-          document.querySelectorAll(".time-value")[2].textContent = minutes.toString().padStart(2, '0');
-          document.querySelectorAll(".time-value")[3].textContent = seconds.toString().padStart(2, '0');
-      }
-      // Update countdown every second
-      const countdownInterval = setInterval(updateCountdown, 1000);
-      updateCountdown(); // Initial call to set values immediately
-    </script>
+    
   </body>
 </html>

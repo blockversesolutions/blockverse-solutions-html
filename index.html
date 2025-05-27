@@ -342,10 +342,12 @@
                               ><i class="fa-solid fa-arrow-right"></i></span
                           ></a>
                         </div>
-                        <p class="mt-30 text-center">
-                          Create decentralized apps (dApps) that run on
-                          blockchain networks like Ethereum, Solana, etc.
-                        </p>
+                        <ul class="mt-20 d-flex flex-column g-10 text-white service-item-list">
+                          <li>ERC-20 / BEP-20 token development</li>
+                          <li>Contract deployment & auditing</li>
+                          <li>Tokenomics advisory</li>
+                        </ul>
+                         
                       </div>
                     </div>
                   </div>
@@ -978,9 +980,44 @@
               </h2>
             </div>
           </div>
+          
+          <div class="col-md-12 text-center">
+            <div class="d-inline-block">
+              <div class="d-flex align-items-center g-5 mt-4 justify-content-center btn-outline flex-wrap service-filter-btn">
+                <span
+                  class="primary-btn outline particle-area filter-btn border-0"
+                  data-particles="14"
+                  onclick="filterItems('all')"
+                  >All</span
+                >
+                <span
+                  class="primary-btn outline particle-area filter-btn border-0"
+                  data-particles="8"
+                  onclick="filterItems('active_project')"
+                >
+                  Active Project
+                </span>
+                <span
+                  class="primary-btn outline particle-area filter-btn border-0"
+                  data-particles="8"
+                  onclick="filterItems('upcoming_highlight')"
+                >
+                  Upcoming Highlight
+                </span>
+                <span
+                  class="primary-btn outline particle-area filter-btn border-0"
+                  data-particles="8"
+                  onclick="filterItems('core_infrastructure')"
+                >
+                  Core Infrastructure
+                </span>
+                
+              </div>
+            </div>
+          </div>
         </div>
         <div class="row gy-4 mt-1">
-          <div class="col-lg-4 col-md-6">
+          <div class="col-lg-4 col-md-6 service-filter-item active_project">
             <div class="card-1 p-1 h-100 card-hover">
               <div class="animation-cover h-100">
                 <div class="glow-1 left-to-right hover-show"></div>
@@ -1026,7 +1063,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6">
+          <div class="col-lg-4 col-md-6 service-filter-item active_project">
             <div class="card-1 p-1 h-100 card-hover">
               <div class="animation-cover h-100">
                 <div class="glow-1 left-to-right hover-show"></div>
@@ -1073,7 +1110,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6">
+          <div class="col-lg-4 col-md-6 service-filter-item upcoming_highlight">
             <div class="card-1 p-1 h-100 card-hover">
               <div class="animation-cover h-100">
                 <div class="glow-1 left-to-right hover-show"></div>
@@ -1120,7 +1157,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6">
+          <div class="col-lg-4 col-md-6 service-filter-item core_infrastructure">
             <div class="card-1 p-1 h-100 card-hover">
               <div class="animation-cover h-100">
                 <div class="glow-1 left-to-right hover-show"></div>
@@ -1170,7 +1207,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6">
+          <div class="col-lg-4 col-md-6 service-filter-item upcoming_highlight">
             <div class="card-1 p-1 h-100 card-hover">
               <div class="animation-cover h-100">
                 <div class="glow-1 left-to-right hover-show"></div>
@@ -1217,7 +1254,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6">
+          <div class="col-lg-4 col-md-6 service-filter-item active_project">
             <div class="card-1 p-1 h-100 card-hover">
               <div class="animation-cover h-100">
                 <div class="glow-1 left-to-right hover-show"></div>
@@ -1304,7 +1341,6 @@
           </div>
           <div class="row">
             <div class="col-md-12 mt-5">
-              
               <div class="emerging-technology-slider">
                 <!-- item -->
                 <div class="card-1 p-1 h-100 card-hover">
@@ -1545,7 +1581,6 @@
                       </div>
                     </div>
                   </div>
-                  
                 </div>
               </div>
             </div>
@@ -1711,7 +1746,6 @@
                         <p>April 5, 2025</p>
                       </li>
                     </ul>
-                    
                   </div>
                   <div class="common-heading mt-20">
                     <h4>Top 5 Security Practices for Blockchain Projects</h4>
@@ -1862,7 +1896,6 @@
         </div>
        </section>
       <!-- Awards Section End -->
-       
     <!-- Contact section Start -->
     <section class="contact-section particle-area" data-particles="20">
       <div class="container">
@@ -2054,28 +2087,7 @@
                   </li>
                 </ul>
               </div>
-              <!-- item -->
-              <div class="footer-widget footer-pagination">
-                <h4>Resources</h4>
-                <ul class="d-flex flex-column g-16 mt-40">
-                  <li>
-                    <a href="blog.html"><i class="fa-solid fa-minus"></i> Blog</a>
-                  </li>
-                  <li>
-                    <a href="#"
-                      ><i class="fa-solid fa-minus"></i> Case Studies</a
-                    >
-                  </li>
-                  <li>
-                    <a href="#"
-                      ><i class="fa-solid fa-minus"></i> Documentation
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#"><i class="fa-solid fa-minus"></i> FAQs</a>
-                  </li>
-                </ul>
-              </div>
+               
             </div>
             <div class="line-1 scaleLine"></div>
             <div
@@ -2143,6 +2155,32 @@
       });
     }
 
+    </script>
+    <script>
+      function filterItems(service_filter) {
+        const items = document.querySelectorAll(".service-filter-item");
+        const buttons = document.querySelectorAll(".filter-btn"); // Add this class to all filter buttons
+        // Show/hide items based on service_filter
+        items.forEach((item) => {
+          if (service_filter === "all" || item.classList.contains(service_filter)) {
+            item.style.display = "block";
+          } else {
+            item.style.display = "none";
+          }
+        });
+        // Update active button state
+        buttons.forEach((btn) => {
+          btn.classList.remove("active");
+          if (
+            btn.getAttribute("onclick")?.includes(`filterItems('${service_filter}')`)
+          ) {
+            btn.classList.add("active");
+          }
+        });
+      }
+      window.addEventListener("DOMContentLoaded", () => {
+        filterItems("all");
+      });
     </script>
     
     
