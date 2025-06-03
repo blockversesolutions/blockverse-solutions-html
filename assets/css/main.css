@@ -832,16 +832,16 @@ button:focus:not(:focus-visible) {
   color: #fff;
 }
 .time-value {
-  display: flex;
-  padding:15px;
-  border-radius: 5px;
-  margin-bottom: 10px;
-  width:72px;
-  font-size:32px;
-  border: 1px solid #ffffff33;
-  backdrop-filter: blur(30px);
-  box-shadow: -4px -6px 20px 0px #764af9b2 inset;
-  background: #ffffff08;
+    display: flex;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    width: 72px;
+    font-size: 26px;
+    border: 1px solid #ffffff33;
+    backdrop-filter: blur(30px);
+    box-shadow: -4px -6px 20px 0px #764af9b2 inset;
+    background: #ffffff08;
 }
 .time-label{
   text-align:center;
