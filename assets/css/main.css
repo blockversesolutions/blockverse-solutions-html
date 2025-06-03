@@ -2247,3 +2247,9 @@ table tr:last-child td:last-child {
   padding-left: 30px;
   list-style-type: disc;
 }
+.maintenance-thumbnails{
+  text-align: center;
+}
+.maintenance-thumbnails img{
+  width: 50%;
+}
