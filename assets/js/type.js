@@ -105,7 +105,6 @@ function typeCode(codeLines) {
     container.appendChild(lineEl);
   });
 }
-
 function activateTab(index) {
   tabs.forEach((t, i) => {
     t.classList.toggle("active", i === index);
@@ -130,7 +129,6 @@ tabs.forEach((tab, index) => {
     startAutoSwitch(); // Restart timer after manual click
   });
 });
-
 // Initial load
 activateTab(currentTabIndex);
 startAutoSwitch();
