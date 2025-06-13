@@ -40,6 +40,9 @@
   .services-section:after {
     background-size: cover;
   }
+  .pagination-section {
+    padding-top:250px;
+  }
 }
 @media screen and (max-width: 991px) {
   .services-section {

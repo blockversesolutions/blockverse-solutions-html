@@ -34,8 +34,35 @@ const codeSnippets = {
     `  }`,
     `<span class="white">};</span>`,
   ],
-};
+  laravel: [
+    `<span class="comment">// Laravel route example</span>`,
+    `<span class="keyword">use</span> <span class="type">Illuminate\\Support\\Facades\\Route</span>;`,
+    ``,
+    `<span class="keyword">Route::</span><span class="func">get(</span><span class="string">'/hello'</span> <span class="keyword">,function() {</span>`,
+    `  <span class="keyword">return</span> <span class="string">'Hello World';</span>`,
+    `<span class="string">});</span>`,
+  ],
 
+  solidity: [
+    `<span class="comment">// SolidJS Component</span>`,
+    `<span class="keyword">import</span> <span class="white">{ createSignal }</span> <span class="keyword">from</span> <span class="string">"solid-js"</span>;`,
+    `<span class="keyword">function</span> <span class="type">Counter</span>() <span class="white">{</span>`,
+    `  <span class="keyword">const</span> <span class="white">[count, setCount]</span> = <span class="func">createSignal</span>(0);`,
+    `  <span class="keyword">return</span> <span class="white">(&lt;button onClick={() => setCount(count() + 1)}&gt;</span>`,
+    `  <span class="keyword"> Count: </span> <span class="white">{count()}</span>`,
+    `  <span class="white">&lt;/button&gt;);</span>`,
+    `<span class="white">}</span>`,
+  ],
+  nodejs: [
+    `<span class="comment">// Basic Node.js HTTP Server</span>`,
+    `<span class="keyword">const</span> <span class="white">http = </span><span class="func">require</span>(<span class="string">'http'</span>);`,
+    `<span class="keyword">const</span> <span class="white">server =</span> <span class="string">http.</span><span class="func">createServer</span><span class="white">((req, res) => {</span>`,
+    `  <span class="string">res.</span><span class="func">writeHead</span><span class="white">(200, { 'Content-Type': 'text/plain' });</span>`,
+    `  <span class="string">res.</span><span class="func">end</span>(<span class="string">'Hello from Node.js!'</span>);`,
+    `<span class="white">});</span>`,
+    `<span class="func">server.</span><span class="func">listen</span><span class="white">(3000);</span>`,
+  ],
+};
 const tabs = document.querySelectorAll(".tab");
 const container = document.getElementById("codeBox");
 const tabKeys = Object.keys(codeSnippets);
