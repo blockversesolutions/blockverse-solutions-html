@@ -746,8 +746,8 @@ button:focus:not(:focus-visible) {
   font-weight: 500;
 }
 .service-hover-card a span i {
-  font-size: 30px;
-  color: #fff;
+    font-size: 22px;
+    color: #fff;
 }
 .service-hover-card {
   position: relative;
@@ -1921,13 +1921,18 @@ button:focus:not(:focus-visible) {
 .process-item-card h4{
   color: #FFFFFF17;
   font-size:80px;
+  transition: 0.5s;
   font-weight: 700;
 }
 .process-item-card h5{
   margin-bottom:8px;
   font-weight:500;
   font-size:22px;
+  transition: 0.5s;
   color:#fff;
+}
+.process-item-card:hover h5{
+  color:#9B79FF;
 }
 .process-item-card p{
   font-size: 16px;
@@ -1935,10 +1940,13 @@ button:focus:not(:focus-visible) {
   color:#FFFFFFCC;
 }
 .process-item-card {
-  max-width: 265px;
+  max-width: 270px;
 }
 .process-item-card {
   position: absolute;
+}
+.process-item-card:hover h4{
+  color:#cac4c4;
 }
 .process-item-card-1{
   left: 0px;
@@ -1955,7 +1963,7 @@ button:focus:not(:focus-visible) {
 }
 .process-item-card-4{
   right:-110px;
-  bottom:-20px;
+  bottom:-46px;
 }
 .process-item-card-5{
   left:-90px;
@@ -1965,6 +1973,9 @@ button:focus:not(:focus-visible) {
   left:-240px;
   top:50%;
   transform: translateY(-50%);
+}
+.process-item-card-3 h4{
+  margin-top: 30px;
 }
 .working-process-container{
   margin-top: 90px;
@@ -2243,8 +2254,15 @@ table tr:last-child td:last-child {
   list-style: inherit;
   margin-left:30px;
 }
-.service-item-list{
+/* .service-item-list{
   padding-left: 30px;
+  list-style-type: disc;
+} */
+.service-item-list ul{
+  display:flex;
+  flex-direction: column;
+  gap: 5px;
+  padding-left:20px;
   list-style-type: disc;
 }
 .maintenance-thumbnails{
@@ -2253,3 +2271,4 @@ table tr:last-child td:last-child {
 .maintenance-thumbnails img{
   width: 50%;
 }
+
