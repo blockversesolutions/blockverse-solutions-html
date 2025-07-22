@@ -7,6 +7,13 @@ body {
   background-color: #000;
   overflow-x: hidden;
 }
+body.modal-open {
+  padding-right: 0 !important;
+}
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
 h1,
 h2,
 h3,
@@ -171,11 +178,7 @@ button:focus:not(:focus-visible) {
 .nav-item > a:focus,
 .dropdown-menu ul li a:hover {
   color: #fff;
-  background: linear-gradient(
-    0deg,
-    rgba(118, 74, 249, 0.2) 0%,
-    rgba(118, 74, 249, 0) 100%
-  );
+  background: linear-gradient(0deg, rgba(118, 74, 249, 0.2) 0%, rgba(118, 74, 249, 0) 100%);
   border-color: #764af9;
 }
 .nav-link.dropdown-toggle.show {
@@ -571,13 +574,14 @@ button:focus:not(:focus-visible) {
   padding-bottom: 50px;
 }
 .header-area {
-  position: sticky;
-  left: 0;
-  right: 0;
-  padding: 2px 0;
-  top: 0px;
-  margin-bottom: -101px;
-  z-index: 999;
+    position: fixed;
+    left: 0;
+    right: 0;
+    padding: 2px 0;
+    top: 0px;
+    margin-bottom: -101px;
+    z-index: 999;
+    width: 100%;
 }
 .technology-highlight-area {
   /* padding: 30px; */
@@ -796,11 +800,7 @@ button:focus:not(:focus-visible) {
   opacity: 1;
 }
 .service-card:hover .service-icon {
-  background: linear-gradient(
-    0deg,
-    rgba(97, 62, 202, 0.8) 0%,
-    rgba(121, 82, 238, 0.2) 100%
-  );
+  background: linear-gradient(0deg, rgba(97, 62, 202, 0.8) 0%, rgba(121, 82, 238, 0.2) 100%);
 }
 .services-section {
   position: relative;
@@ -2312,4 +2312,12 @@ table tr:last-child td:last-child {
 }
 .maintenance-thumbnails img {
   width: 50%;
+}
+.modal-button-wrapper button {
+  max-width: 560px;
+  width: 100%;
+  margin: auto;
+}
+.modal-textarea-wrapper textarea {
+  height: 220px;
 }

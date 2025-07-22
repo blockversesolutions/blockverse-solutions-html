@@ -9,8 +9,10 @@
   }
   .navbar.navbar-expand-xl {
     background: #25174c;
-    position: absolute;
+    position: fixed;
     width: 100%;
+    left: 0;
+    top: 0;
   }
   .common-heading-section h1 {
     font-size: 50px;
@@ -41,7 +43,7 @@
     background-size: cover;
   }
   .pagination-section {
-    padding-top:250px;
+    padding-top: 250px;
   }
 }
 @media screen and (max-width: 991px) {
@@ -101,7 +103,7 @@
   }
   .primary-btn {
     padding: 10px 26px;
-    font-size: 16px; 
+    font-size: 16px;
   }
   .navbar-brand img {
     max-width: 205px;
@@ -132,17 +134,17 @@
     font-size: 20px;
     padding: 8px 18px;
   }
-  .btn-3{
-    padding:5px 10px;
+  .btn-3 {
+    padding: 5px 10px;
   }
-  .counter-item{
+  .counter-item {
     border: none;
-    padding-right:0;
+    padding-right: 0;
   }
-  .cta-section{
-    background-size:cover !important;
+  .cta-section {
+    background-size: cover !important;
   }
-  .shape-top-bg:before{
+  .shape-top-bg:before {
     background-size: cover;
     opacity: 0.5;
   }
@@ -151,8 +153,8 @@
     height: 220px;
     width: 220px;
   }
-  .process-item-bg img{
-    width:58%;
+  .process-item-bg img {
+    width: 58%;
   }
   .process-center-box h4 {
     line-height: 30px;
@@ -163,7 +165,7 @@
     text-align: center !important;
   }
   .process-item-card h5 {
-    margin-bottom:6px;
+    margin-bottom: 6px;
     font-size: 18px;
   }
   .process-item-card p {
@@ -184,25 +186,26 @@
     left: 70px;
     bottom: -65px;
   }
-  .footer-description p{
+  .footer-description p {
     margin: auto;
     margin-top: 40px;
   }
-  .footer-area{
+  .footer-area {
     justify-content: space-around;
   }
 }
 @media screen and (max-width: 767px) {
-.service-filter-btn .primary-btn{
+  .service-filter-btn .primary-btn {
     padding: 6px 12px !important;
   }
-  .footer-pagination ul li a{
+  .footer-pagination ul li a {
     font-size: 16px;
   }
-  .time-counter{
+  .time-counter {
     gap: 2px !important;
   }
-  .dotted-shape-left,.dotted-shape-right{
+  .dotted-shape-left,
+  .dotted-shape-right {
     width: 100%;
   }
   .process-item-card {
@@ -210,21 +213,21 @@
     max-width: 100%;
   }
   .process-item-bg img {
-    width:85%;
+    width: 85%;
   }
   .process-center-box {
-    height:200px;
+    height: 200px;
     width: 200px;
     position: absolute;
     left: 0;
     right: 0;
     margin: 0 auto;
-  
+
     transform: translateY(auto);
   }
   .working-process-container {
     margin-top: 0px;
-}
+  }
   .process-item-card {
     margin-top: 30px;
     transform: translateY(0) !important;
@@ -240,18 +243,18 @@
     margin-bottom: 12px;
     font-size: 28px;
   }
- 
-  .counter-item p{
+
+  .counter-item p {
     font-size: 16px;
     line-height: 25px;
   }
-  .counter-area{
+  .counter-area {
     flex-wrap: wrap;
     padding: 20px !important;
-    row-gap:20px;
+    row-gap: 20px;
   }
-  .counter-item{
-    width:50%;
+  .counter-item {
+    width: 50%;
   }
   .simplebar-height {
     display: none !important;
@@ -267,26 +270,37 @@
     font-size: 28px;
     line-height: 36px;
   }
+  .modal-textarea-wrapper textarea {
+    height: 140px;
+  }
+  .navbar-brand img {
+    max-width: 170px;
+    height: auto;
+  }
+  .pagination-section {
+    padding-top: 121px;
+  }
 }
 @media screen and (max-width: 580px) {
-  .footer-pagination{
+  .footer-pagination {
     width: 100%;
   }
-  .pagination-list{
+  .pagination-list {
     gap: 5px !important;
   }
-  .pagination-list li span{
-    min-width:55px;
-    height:55px;
+  .pagination-list li span {
+    min-width: 55px;
+    height: 55px;
     font-size: 14px;
   }
-  .blog-thumbnails-sm img,.blog-thumbnails-sm{
+  .blog-thumbnails-sm img,
+  .blog-thumbnails-sm {
     max-width: 100%;
   }
-  .blog-card{
+  .blog-card {
     flex-wrap: wrap;
   }
-  .mt-120{
+  .mt-120 {
     margin-top: 80px;
   }
   .navbar {
@@ -302,8 +316,7 @@
   body {
     overflow-x: hidden;
   }
-  .blog-thumbnails-sm img{
-    width:100%;
+  .blog-thumbnails-sm img {
+    width: 100%;
   }
 }
- 
