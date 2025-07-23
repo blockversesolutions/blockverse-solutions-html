@@ -574,14 +574,14 @@ button:focus:not(:focus-visible) {
   padding-bottom: 50px;
 }
 .header-area {
-    position: fixed;
-    left: 0;
-    right: 0;
-    padding: 2px 0;
-    top: 0px;
-    margin-bottom: -101px;
-    z-index: 999;
-    width: 100%;
+  position: fixed;
+  left: 0;
+  right: 0;
+  padding: 2px 0;
+  top: 0px;
+  margin-bottom: -101px;
+  z-index: 999;
+  width: 100%;
 }
 .technology-highlight-area {
   /* padding: 30px; */
@@ -2321,3 +2321,37 @@ table tr:last-child td:last-child {
 .modal-textarea-wrapper textarea {
   height: 220px;
 }
+
+/* Modal css start  */
+
+.career-modal {
+  padding: 30px;
+  background: #ffffff08;
+  backdrop-filter: blur(30px);
+  border-radius: 10px;
+  border: 1.5px solid #ffffff33;
+  box-shadow: -4px -6px 20px 0px #764af9b2 inset;
+}
+.career-modal-date {
+  color: #ffffff;
+}
+.career-modal-top {
+  border-bottom: 1px solid #ffffff1a;
+  margin-bottom: 20px;
+}
+.career-modal-card h4 {
+  color: #ffffff;
+  padding-bottom: 0px;
+}
+.career-modal-list {
+  padding-top: 9px;
+}
+.career-modal-list li {
+  color: #ffffff;
+  list-style: inside;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 5%;
+}
+
