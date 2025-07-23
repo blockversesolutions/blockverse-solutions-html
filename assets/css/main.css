@@ -2329,6 +2329,7 @@ table tr:last-child td:last-child {
 .modal-textarea-wrapper textarea {
   height: 220px;
 }
+<<<<<<< HEAD
 .career-heading p {
   font-size: 15px;
 }
@@ -2338,3 +2339,39 @@ table tr:last-child td:last-child {
 .text-primary {
   color: #9b79ff !important;
 }
+=======
+
+/* Modal css start  */
+
+.career-modal {
+  padding: 30px;
+  background: #ffffff08;
+  backdrop-filter: blur(30px);
+  border-radius: 10px;
+  border: 1.5px solid #ffffff33;
+  box-shadow: -4px -6px 20px 0px #764af9b2 inset;
+}
+.career-modal-date {
+  color: #ffffff;
+}
+.career-modal-top {
+  border-bottom: 1px solid #ffffff1a;
+  margin-bottom: 20px;
+}
+.career-modal-card h4 {
+  color: #ffffff;
+  padding-bottom: 0px;
+}
+.career-modal-list {
+  padding-top: 9px;
+}
+.career-modal-list li {
+  color: #ffffff;
+  list-style: inside;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 5%;
+}
+
+>>>>>>> rakib

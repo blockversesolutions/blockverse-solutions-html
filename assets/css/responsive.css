@@ -330,4 +330,13 @@
   .blog-thumbnails-sm img {
     width: 100%;
   }
+  .career-modal-mobile ul {
+    padding-bottom: 15px;
+  }
+  .career-modal-list li {
+    font-size: 14px;
+  }
+  .career-modal-list li {
+    padding: 5px 0;
+  }
 }
