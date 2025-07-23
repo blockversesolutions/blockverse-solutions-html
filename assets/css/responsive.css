@@ -280,8 +280,19 @@
   .pagination-section {
     padding-top: 121px;
   }
+  .badge-label-sm {
+    
+    font-size: 14px;
+ 
+}
 }
 @media screen and (max-width: 580px) {
+  .common-heading p {
+    font-size: 15px;
+  }
+  .career-btn {
+    margin-top: 20px;
+  }
   .footer-pagination {
     width: 100%;
   }
