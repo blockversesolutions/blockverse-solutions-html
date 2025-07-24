@@ -2344,18 +2344,37 @@ table tr:last-child td:last-child {
   box-shadow: -4px -6px 20px 0px #764af9b2 inset;
 }
 .career-modal-date {
-  color: #ffffff;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    max-width: 145px !important;
+    gap: 7px;
+    justify-content: flex-end;
+    width: 100%;
 }
 .career-modal-top {
   border-bottom: 1px solid #ffffff1a;
   margin-bottom: 20px;
 }
-.career-modal-border h4{
+.career-modal-border h1,
+.career-modal-border h2,
+.career-modal-border h3,
+.career-modal-border h4,
+.career-modal-border h6,
+.career-modal-border h5 {
   color: #ffffff;
   padding-bottom: 0px;
   position: relative;
+  font-size: 24px;
+  line-height: 34px;
+  margin-top: 12px;
 }
-.career-modal-border h4::after{
+.career-modal-border h1::after,
+.career-modal-border h2::after,
+.career-modal-border h3::after,
+.career-modal-border h4::after,
+.career-modal-border h6::after,
+.career-modal-border h5::after {
   position: absolute;
   left: 0;
   bottom: -6px;

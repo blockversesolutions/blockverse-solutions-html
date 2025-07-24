@@ -281,10 +281,8 @@
     padding-top: 121px;
   }
   .badge-label-sm {
-    
     font-size: 14px;
- 
-}
+  }
 }
 @media screen and (max-width: 580px) {
   .common-heading p {
@@ -338,5 +336,8 @@
   }
   .career-modal-list li {
     padding: 5px 0;
+  }
+  .career-modal-date {
+    justify-content: flex-start;
   }
 }
