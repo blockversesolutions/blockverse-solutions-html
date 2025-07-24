@@ -2329,7 +2329,6 @@ table tr:last-child td:last-child {
 .modal-textarea-wrapper textarea {
   height: 220px;
 }
-<<<<<<< HEAD
 .career-heading p {
   font-size: 15px;
 }
@@ -2339,10 +2338,11 @@ table tr:last-child td:last-child {
 .text-primary {
   color: #9b79ff !important;
 }
-=======
 
 /* Modal css start  */
-
+.career-modal-area{
+  padding-top: 120px;
+}
 .career-modal {
   padding: 30px;
   background: #ffffff08;
@@ -2374,4 +2374,3 @@ table tr:last-child td:last-child {
   letter-spacing: 5%;
 }
 
->>>>>>> rakib
