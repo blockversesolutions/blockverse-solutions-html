@@ -2350,12 +2350,12 @@ table tr:last-child td:last-child {
   border-bottom: 1px solid #ffffff1a;
   margin-bottom: 20px;
 }
-.career-modal-border {
+.career-modal-border h4{
   color: #ffffff;
   padding-bottom: 0px;
   position: relative;
 }
-.career-modal-border::after{
+.career-modal-border h4::after{
   position: absolute;
   left: 0;
   bottom: -6px;
