@@ -2349,25 +2349,24 @@ table tr:last-child td:last-child {
     align-items: center;
     max-width: 145px !important;
     gap: 7px;
-    justify-content: flex-end;
     width: 100%;
+}
+.career-modal-body{
+    background: transparent;
 }
 .career-modal-top {
   border-bottom: 1px solid #ffffff1a;
   margin-bottom: 20px;
 }
-.career-modal-border h1,
-.career-modal-border h2,
-.career-modal-border h3,
-.career-modal-border h4,
-.career-modal-border h6,
-.career-modal-border h5 {
-  color: #ffffff;
-  padding-bottom: 0px;
-  position: relative;
-  font-size: 24px;
-  line-height: 34px;
-  margin-top: 12px;
+.career-modal-border h1, .career-modal-border h2, .career-modal-border h3, .career-modal-border h4, .career-modal-border h6, .career-modal-border h5 {
+    color: #ffffff !important;
+    padding-bottom: 0;
+    position: relative;
+    font-size: 24px;
+    line-height: 34px;
+    margin-top: 12px;
+    display: inline-block;
+    background: transparent !important;
 }
 .career-modal-border h1::after,
 .career-modal-border h2::after,
@@ -2405,4 +2404,10 @@ table tr:last-child td:last-child {
 .privacy-info ul {
   margin-left: 30px;
   list-style: square;
+}
+.career-info ul {
+  margin-left: 30px;
+  list-style: square;
+    color: white !important;
+    background-color: transparent !important;
 }
